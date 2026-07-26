@@ -1,0 +1,1135 @@
+{
+  "schemaVersion": "1.0.0",
+  "meta": {
+    "project": "1000 Profitable Ideas",
+    "description": "Canonical structured dataset for categories, sub-categories, and validated idea blueprints.",
+    "lastUpdated": "2026-07-26",
+    "minimumValidationScore": 70
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Vertical SaaS",
+      "slug": "vertical-saas",
+      "thesis": "Niche business workflows often justify focused tools with better onboarding and clearer ROI than horizontal platforms.",
+      "targetMarket": "Small and midsize niche businesses",
+      "tags": ["b2b", "saas", "workflow"],
+      "evidence": [
+        {
+          "title": "From First Audit to Enterprise GRC | Sprinto Plans",
+          "url": "http://sprinto.com/pricing/",
+          "accessedOn": "2026-07-26",
+          "sourceType": "competitor-pricing",
+          "notes": "Evidence that specialized compliance workflow software is sold across multiple plan tiers and enterprise add-ons."
+        },
+        {
+          "title": "site:g2.com small business audit management software",
+          "url": "http://duckduckgo.com/?q=site%3Ag2.com+small+business+audit+management+software",
+          "accessedOn": "2026-07-26",
+          "sourceType": "market-discovery",
+          "notes": "Shows established buyer discovery and comparison behavior around SMB audit and compliance tooling."
+        }
+      ],
+      "subcategories": [
+        {
+          "id": 1,
+          "name": "Compliance Workflows",
+          "slug": "compliance-workflows",
+          "thesis": "Compliance-heavy teams repeatedly pay with time, consulting, and software to stay audit-ready.",
+          "targetMarket": "Lean teams with recurring policy, audit, or evidence requirements",
+          "tags": ["compliance", "operations"],
+          "evidence": [
+            {
+              "title": "From First Audit to Enterprise GRC | Sprinto Plans",
+              "url": "http://sprinto.com/pricing/",
+              "accessedOn": "2026-07-26",
+              "sourceType": "competitor-pricing",
+              "notes": "Direct evidence of recurring compliance workflow modules such as audit management, automated evidence collection, policy campaigns, vendor reviews, and risk assessments."
+            },
+            {
+              "title": "site:g2.com small business audit management software",
+              "url": "http://duckduckgo.com/?q=site%3Ag2.com+small+business+audit+management+software",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Shows SMB audit/compliance software is an established buyer category with pricing, review, and feature comparisons."
+            },
+            {
+              "title": "compliance software pricing audit readiness small business",
+              "url": "http://duckduckgo.com/?q=compliance+software+pricing+audit+readiness+small+business",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Shows broad discoverability of compliance software comparisons and SMB audit-readiness tools."
+            }
+          ],
+          "projects": [
+            {
+              "id": 1,
+              "name": "AuditTrail AI",
+              "slug": "audittrail-ai",
+              "pitch": "Automated compliance evidence capture for boutique HR and operations teams.",
+              "summary": "Aggregates recurring evidence, deadlines, and policy artifacts into a single exportable workflow.",
+              "problem": "Audit preparation is scattered across documents, emails, and internal systems, creating repeated manual cleanup.",
+              "targetUsers": [
+                "HR managers at 20-200 employee firms",
+                "Operations leads handling compliance documentation"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Existing spend on consultants, manual labor, and compliance subscriptions implies budget.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "HR communities",
+                "Compliance consultants"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 49,
+                "target": 149,
+                "unit": "per month"
+              },
+              "validationScore": 78,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription",
+              "status": "Validated",
+              "tags": ["b2b", "compliance", "automation"],
+              "evidence": [
+                {
+                  "title": "site:learn.g2.com audit management software small business Sprinto Vanta Secureframe",
+                  "url": "http://duckduckgo.com/?q=site%3Alearn.g2.com+audit+management+software+small+business+Sprinto+Vanta+Secureframe",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Surfaces G2 Learn coverage comparing audit and compliance tools such as Sprinto, Vanta, and Secureframe for small-business audit readiness and compliance workflows."
+                }
+              ],
+              "derived": {
+                "sortingScore": 78,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 2,
+              "name": "PolicyPulse",
+              "slug": "policypulse",
+              "pitch": "Track policy acknowledgements and overdue updates across distributed small teams.",
+              "summary": "Helps operators distribute, confirm, and report on policy adoption without a heavy HR suite.",
+              "problem": "Policy distribution and acknowledgment tracking are often buried in email threads and spreadsheets.",
+              "targetUsers": [
+                "People ops leads at remote-first SMEs",
+                "Fractional HR consultants"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "HR tools and consultant-led policy workflows already absorb budget that could be replaced.",
+              "distributionChannels": [
+                "HR Slack groups",
+                "Fractional HR partners",
+                "SEO around policy templates"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 29,
+                "target": 99,
+                "unit": "per month"
+              },
+              "validationScore": 74,
+              "buildComplexity": "Low",
+              "timeToMvp": "1-2 weeks",
+              "revenueModel": "SaaS subscription",
+              "status": "Blueprinted",
+              "tags": ["hr", "compliance", "remote-work"],
+              "evidence": [
+                {
+                  "title": "CrewBase — Employee Request Management for Small Businesses",
+                  "url": "http://crewbase.app/",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Direct evidence that small businesses pay for workflows including policy sign-offs, audit logs, approvals, and timestamped records, with visible pricing tiers from $29/mo."
+                },
+                {
+                  "title": "HR policy acknowledgement software remote teams small business",
+                  "url": "http://duckduckgo.com/?q=HR+policy+acknowledgement+software+remote+teams+small+business",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Shows discoverability and buyer interest around policy acknowledgment, compliance tracking, and remote-team HR tooling."
+                }
+              ],
+              "derived": {
+                "sortingScore": 76,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Low",
+                "aiLeverage": "Medium",
+                "implementationReadiness": "High"
+              }
+            },
+            {
+              "id": 3,
+              "name": "ControlLedger",
+              "slug": "controlledger",
+              "pitch": "Map compliance controls to owners, evidence, and renewal deadlines for lean teams that cannot afford full GRC overhead.",
+              "summary": "Tracks which controls exist, who owns them, what evidence is required, and when refreshes are due so small teams can stay audit-ready without spreadsheet sprawl.",
+              "problem": "Small compliance programs often lose track of control ownership and supporting evidence across documents, chats, and ad hoc trackers, creating avoidable audit scramble.",
+              "targetUsers": [
+                "Compliance leads at SMBs and mid-market firms",
+                "Operations managers owning lightweight audit programs",
+                "Security or GRC generalists coordinating evidence collection"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Competitor positioning around automated evidence collection, compliance health, gap reporting, and recurring workflow operations suggests clear budget for lighter control-tracking software.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "Compliance consultant referrals",
+                "Security and GRC communities"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 59,
+                "target": 179,
+                "unit": "per month"
+              },
+              "validationScore": 75,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with team and framework tiers",
+              "status": "Validated",
+              "tags": ["compliance", "controls", "audit", "b2b"],
+              "evidence": [
+                {
+                  "title": "From First Audit to Enterprise GRC | Sprinto Plans",
+                  "url": "http://sprinto.com/pricing/",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports ongoing spend for audit readiness, automated evidence collection, compliance health, gap reports, and broader recurring control-management workflows."
+                },
+                {
+                  "title": "site:g2.com small business audit management software",
+                  "url": "http://duckduckgo.com/?q=site%3Ag2.com+small+business+audit+management+software",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports established SMB buyer discovery and comparison behavior for audit and compliance workflow tools."
+                }
+              ],
+              "derived": {
+                "sortingScore": 77,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Client Reporting Automation",
+          "slug": "client-reporting-automation",
+          "thesis": "Agencies repeatedly spend billable time turning operational data into client-facing reports.",
+          "targetMarket": "Boutique agencies and service operators producing recurring client summaries",
+          "tags": ["agency", "reporting", "automation"],
+          "evidence": [
+            {
+              "title": "Pricing & Packages For Marketing Agencies | Agency Dashboard",
+              "url": "http://agencydashboard.io/pricing",
+              "accessedOn": "2026-07-26",
+              "sourceType": "competitor-pricing",
+              "notes": "Direct evidence that marketing agencies pay for reporting software, with visible pricing tiers from $5/mo through agency and enterprise plans."
+            },
+            {
+              "title": "agency client reporting software pricing marketing agency",
+              "url": "http://duckduckgo.com/?q=agency+client+reporting+software+pricing+marketing+agency",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Shows broad discoverability and comparison behavior around agency client reporting tools, pricing, and white-label reporting workflows."
+            }
+          ],
+          "projects": [
+            {
+              "id": 1,
+              "name": "ClientDeck Auto",
+              "slug": "clientdeck-auto",
+              "pitch": "Generate polished recurring client update decks from analytics and operations data.",
+              "summary": "Turns weekly reporting inputs into branded summaries for small agencies without enterprise BI tooling.",
+              "problem": "Agencies lose margin on repetitive status reporting that clients still expect to see presented cleanly.",
+              "targetUsers": [
+                "Agency account managers",
+                "Small agency founders"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Reporting labor is already built into retainers, making time savings easy to monetize.",
+              "distributionChannels": [
+                "Agency communities",
+                "LinkedIn content",
+                "Cold outbound to boutique firms"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 79,
+                "target": 199,
+                "unit": "per month"
+              },
+              "validationScore": 82,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-3 weeks",
+              "revenueModel": "SaaS subscription",
+              "status": "Ready to Build",
+              "tags": ["agency", "reporting", "automation"],
+              "evidence": [
+                {
+                  "title": "Pricing & Packages For Marketing Agencies | Agency Dashboard",
+                  "url": "http://agencydashboard.io/pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports willingness to pay for automated agency reporting with explicit pricing and agency-focused packaging."
+                },
+                {
+                  "title": "#1 Reporting Tool For Marketing Agencies | Agency Dashboard",
+                  "url": "http://agencydashboard.io/",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Shows feature expectations in the niche including white-label dashboards, automated reports, integrations, and centralized client reporting."
+                }
+              ],
+              "derived": {
+                "sortingScore": 84,
+                "opportunitySize": "High",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "High"
+              }
+            },
+            {
+              "id": 2,
+              "name": "ReportBackfill",
+              "slug": "reportbackfill",
+              "pitch": "Backfill polished recurring client reports from scattered notes, dashboards, and ticket updates.",
+              "summary": "Helps agencies reconstruct weekly or monthly client-ready reporting packages from messy internal inputs without rebuilding everything by hand.",
+              "problem": "Client updates often depend on scattered screenshots, channel notes, metrics exports, and task updates, forcing account teams to manually assemble the same report story every cycle.",
+              "targetUsers": [
+                "Agency account managers",
+                "Freelance marketers and operators",
+                "Boutique agency founders overseeing client communication"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Agencies already pay for reporting tools and absorb recurring labor costs to create presentation-ready client updates, making report backfill and assembly a monetizable workflow.",
+              "distributionChannels": [
+                "Agency communities",
+                "LinkedIn content",
+                "Partner referrals from fractional operators"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 59,
+                "target": 149,
+                "unit": "per month"
+              },
+              "validationScore": 77,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with premium branded export tiers",
+              "status": "Validated",
+              "tags": ["agency", "reporting", "automation", "client-success"],
+              "evidence": [
+                {
+                  "title": "Pricing & Packages For Marketing Agencies | Agency Dashboard",
+                  "url": "http://agencydashboard.io/pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports willingness to pay for recurring client reporting workflows with agency-oriented packaging and explicit paid tiers."
+                },
+                {
+                  "title": "agency client reporting software pricing marketing agency",
+                  "url": "http://duckduckgo.com/?q=agency+client+reporting+software+pricing+marketing+agency",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports ongoing category discoverability and comparison behavior around agency reporting automation, white-label reporting, and recurring client update workflows."
+                }
+              ],
+              "derived": {
+                "sortingScore": 79,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 3,
+              "name": "SlideSignal",
+              "slug": "slidesignal",
+              "pitch": "Turn recurring agency metrics into concise client-ready narrative slides with highlights, risks, and next actions.",
+              "summary": "Converts recurring campaign or ops metrics into polished slide-ready summaries so agencies can communicate outcomes without rewriting the same commentary every reporting cycle.",
+              "problem": "Even when agencies have dashboards, they still spend manual time translating raw charts into stakeholder-friendly narrative updates, key takeaways, and suggested next steps.",
+              "targetUsers": [
+                "Agency account managers",
+                "Boutique agency founders",
+                "Freelance operators delivering recurring performance reviews"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Visible spend on agency reporting tools plus ongoing manual presentation work makes narrative reporting automation a credible paid wedge.",
+              "distributionChannels": [
+                "Agency communities",
+                "LinkedIn content",
+                "Cold outbound to boutique firms"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 69,
+                "target": 179,
+                "unit": "per month"
+              },
+              "validationScore": 78,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with branded export and client-seat upgrades",
+              "status": "Validated",
+              "tags": ["agency", "reporting", "slides", "automation"],
+              "evidence": [
+                {
+                  "title": "#1 Reporting Tool For Marketing Agencies | Agency Dashboard",
+                  "url": "http://agencydashboard.io/",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Supports the workflow expectation for automated reports, white-label delivery, and recurring client-facing reporting outputs."
+                },
+                {
+                  "title": "agency client reporting software pricing marketing agency",
+                  "url": "http://duckduckgo.com/?q=agency+client+reporting+software+pricing+marketing+agency",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports active buyer discovery and comparison behavior around agency reporting workflows, white-label outputs, and reporting automation."
+                }
+              ],
+              "derived": {
+                "sortingScore": 80,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Vendor Risk Management",
+          "slug": "vendor-risk-management",
+          "thesis": "Lean teams increasingly need lighter ways to onboard, assess, monitor, and report on third-party vendor risk without adopting a full enterprise TPRM suite.",
+          "targetMarket": "SMBs and mid-market teams handling vendor onboarding, questionnaires, and third-party oversight",
+          "tags": ["vendor-risk", "tprm", "operations", "compliance"],
+          "evidence": [
+            {
+              "title": "Third-Party Vendor Risk Management Software | UpGuard",
+              "url": "http://www.upguard.com/product/vendor-risk",
+              "accessedOn": "2026-07-26",
+              "sourceType": "competitor-positioning",
+              "notes": "Direct evidence of a mature vendor-risk software category with continuous monitoring, questionnaires, onboarding, remediation, reporting, and AI-powered workflows."
+            },
+            {
+              "title": "vendor risk management software small business pricing",
+              "url": "http://duckduckgo.com/?q=vendor+risk+management+software+small+business+pricing",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Shows active SMB buyer-intent around vendor-risk software pricing, reviews, demos, and platform comparisons."
+            },
+            {
+              "title": "site:guideflow.com \"Compare the 7 best vendor risk management software platforms for 2026\"",
+              "url": "http://duckduckgo.com/?q=site%3Aguideflow.com+%22Compare+the+7+best+vendor+risk+management+software+platforms+for+2026%22",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Supports comparison behavior around workflow depth, continuous monitoring, risk scoring, pricing, and ratings in the vendor-risk category."
+            }
+          ],
+          "projects": [
+            {
+              "id": 1,
+              "name": "VendorPilot",
+              "slug": "vendorpilot",
+              "pitch": "A lighter-weight vendor onboarding and third-party risk workflow for lean ops and compliance teams.",
+              "summary": "Centralizes vendor intake, questionnaires, risk review, and ongoing monitoring without the overhead of an enterprise TPRM platform.",
+              "problem": "Lean teams often manage vendor reviews across spreadsheets, email threads, and ad hoc evidence requests, creating slow onboarding and weak ongoing oversight.",
+              "targetUsers": [
+                "Operations managers handling vendor approvals",
+                "Compliance leads at SMBs and mid-market firms",
+                "Security or GRC generalists without a full TPRM team"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Existing vendor-risk platforms prove buyers already pay for onboarding, assessments, continuous monitoring, and reporting workflows in this category.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "GRC and security communities",
+                "Compliance consultant referrals"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 99,
+                "target": 299,
+                "unit": "per month"
+              },
+              "validationScore": 75,
+              "buildComplexity": "Medium",
+              "timeToMvp": "3-5 weeks",
+              "revenueModel": "SaaS subscription with tiered vendor-volume plans",
+              "status": "Idea",
+              "tags": ["vendor-risk", "tprm", "b2b", "workflow"],
+              "evidence": [
+                {
+                  "title": "Third-Party Vendor Risk Management Software | UpGuard",
+                  "url": "http://www.upguard.com/product/vendor-risk",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Supports workflow expectations including onboarding, assessments, questionnaires, remediation, continuous monitoring, and reporting."
+                },
+                {
+                  "title": "vendor risk management software pricing upguard secureframe sprinto",
+                  "url": "http://duckduckgo.com/?q=vendor+risk+management+software+pricing+upguard+secureframe+sprinto",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Shows active comparison behavior among vendor-risk and adjacent compliance vendors, including price sensitivity and alternative evaluation."
+                }
+              ],
+              "derived": {
+                "sortingScore": 76,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 2,
+              "name": "QuestionnaireFlow",
+              "slug": "questionnaireflow",
+              "pitch": "Streamline vendor security questionnaires, evidence requests, and answer reuse for lean review teams.",
+              "summary": "Helps small compliance and security teams collect vendor responses, reuse prior answers, and move from questionnaire intake to decision faster.",
+              "problem": "Vendor questionnaire reviews are repetitive, manual, and spread across inboxes, spreadsheets, and shared drives, slowing down approvals and creating inconsistent risk reviews.",
+              "targetUsers": [
+                "Compliance managers reviewing third-party questionnaires",
+                "Security analysts at SMBs and mid-market firms",
+                "Procurement or operations leads coordinating vendor due diligence"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Direct competitor positioning shows clear buyer value in questionnaire automation, reduced manual work, and centralized vendor review workflows.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "Security and GRC communities",
+                "Consultant and vCISO referrals"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 79,
+                "target": 249,
+                "unit": "per month"
+              },
+              "validationScore": 74,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with usage or vendor-volume tiers",
+              "status": "Validated",
+              "tags": ["vendor-risk", "questionnaires", "b2b", "workflow"],
+              "evidence": [
+                {
+                  "title": "Third-Party Vendor Risk Management Software | UpGuard",
+                  "url": "http://www.upguard.com/product/vendor-risk",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Directly supports the questionnaire automation and centralized intelligence workflow, including claims of 90% less manual work."
+                },
+                {
+                  "title": "site:guideflow.com \"Compare the 7 best vendor risk management software platforms for 2026\"",
+                  "url": "http://duckduckgo.com/?q=site%3Aguideflow.com+%22Compare+the+7+best+vendor+risk+management+software+platforms+for+2026%22",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports active category comparison around workflow depth, monitoring, scoring, and pricing, implying mature buyer evaluation behavior."
+                }
+              ],
+              "derived": {
+                "sortingScore": 75,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 3,
+              "name": "RiskDigest",
+              "slug": "riskdigest",
+              "pitch": "Turn vendor-risk reviews into fast board-ready summaries, remediation queues, and recurring stakeholder reports.",
+              "summary": "Packages questionnaire findings, monitoring signals, and remediation status into concise recurring reports for operators, executives, and audit stakeholders.",
+              "problem": "Even when teams collect vendor-risk data, they still spend manual effort turning findings into digestible status updates, exception logs, and executive-ready summaries.",
+              "targetUsers": [
+                "Compliance leads preparing stakeholder updates",
+                "Security and GRC generalists reporting third-party risk posture",
+                "Operations managers coordinating vendor remediation follow-up"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Direct competitor positioning shows clear value in one-click reporting, board communication, and centralized oversight, making reporting automation a credible paid wedge.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "GRC and security communities",
+                "Compliance consultant referrals"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 69,
+                "target": 199,
+                "unit": "per month"
+              },
+              "validationScore": 73,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with premium stakeholder reporting tiers",
+              "status": "Validated",
+              "tags": ["vendor-risk", "reporting", "b2b", "workflow"],
+              "evidence": [
+                {
+                  "title": "Third-Party Vendor Risk Management Software | UpGuard",
+                  "url": "http://www.upguard.com/product/vendor-risk",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Directly supports the reporting wedge via one-click reporting, point-in-time assessments, board and C-suite communication, and centralized program oversight."
+                },
+                {
+                  "title": "site:guideflow.com \"Compare the 7 best vendor risk management software platforms for 2026\"",
+                  "url": "http://duckduckgo.com/?q=site%3Aguideflow.com+%22Compare+the+7+best+vendor+risk+management+software+platforms+for+2026%22",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports mature buyer comparison behavior around platform depth, reporting, scoring, and pricing in the vendor-risk category."
+                }
+              ],
+              "derived": {
+                "sortingScore": 74,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 4,
+              "name": "RemediationLane",
+              "slug": "remediationlane",
+              "pitch": "Track vendor-risk findings, exceptions, and remediation follow-through without the overhead of a full TPRM suite.",
+              "summary": "Turns questionnaire gaps, monitoring findings, and exception decisions into a lightweight remediation workflow for lean teams that need clear ownership and status visibility.",
+              "problem": "Teams may complete vendor reviews, but they still struggle to assign fixes, track exceptions, and report remediation progress across spreadsheets, emails, and ad hoc follow-ups.",
+              "targetUsers": [
+                "Compliance leads managing vendor follow-up",
+                "Security and GRC generalists handling exceptions",
+                "Operations managers coordinating third-party remediation tasks"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Direct competitor positioning treats remediation, exception handling, and ongoing oversight as core workflow value, which supports paid demand for a lighter execution layer.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "GRC and security communities",
+                "Compliance consultant referrals"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 79,
+                "target": 229,
+                "unit": "per month"
+              },
+              "validationScore": 74,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with tiered vendor and workflow limits",
+              "status": "Validated",
+              "tags": ["vendor-risk", "remediation", "exceptions", "b2b", "workflow"],
+              "evidence": [
+                {
+                  "title": "Third-Party Vendor Risk Management Software | UpGuard",
+                  "url": "http://www.upguard.com/product/vendor-risk",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Directly supports remediation and exception workflows through positioning around remediation, exceptions, centralized oversight, and ongoing vendor-risk operations."
+                },
+                {
+                  "title": "vendor risk management software small business pricing",
+                  "url": "http://duckduckgo.com/?q=vendor+risk+management+software+small+business+pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports SMB buyer-intent and pricing-oriented discovery behavior around vendor-risk tooling, including workflow and monitoring comparisons."
+                }
+              ],
+              "derived": {
+                "sortingScore": 76,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 5,
+              "name": "ReviewClock",
+              "slug": "reviewclock",
+              "pitch": "Keep vendor reassessments, renewal checkpoints, and evidence refresh cycles from slipping through the cracks.",
+              "summary": "Gives lean teams a lightweight system for scheduling periodic vendor reviews, tracking expiring evidence, and aligning reassessment work with renewal timelines.",
+              "problem": "After initial onboarding, teams often lose track of when vendors need reassessment, when evidence is stale, and which contracts are approaching renewal, causing rushed reviews and weak oversight.",
+              "targetUsers": [
+                "Compliance leads managing vendor review calendars",
+                "Operations managers overseeing vendor renewals",
+                "Security and GRC generalists handling periodic reassessments"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Competitor positioning around continuous monitoring and ongoing vendor oversight supports paid demand for a simpler reassessment and renewal workflow.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "GRC and security communities",
+                "Compliance consultant referrals"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 69,
+                "target": 199,
+                "unit": "per month"
+              },
+              "validationScore": 73,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with tiered vendor-count and reminder automation limits",
+              "status": "Validated",
+              "tags": ["vendor-risk", "reviews", "renewals", "b2b", "workflow"],
+              "evidence": [
+                {
+                  "title": "Third-Party Vendor Risk Management Software | UpGuard",
+                  "url": "http://www.upguard.com/product/vendor-risk",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Directly supports ongoing oversight through positioning around continuous monitoring, point-in-time assessments, and centralized vendor-risk operations."
+                },
+                {
+                  "title": "site:guideflow.com \"Compare the 7 best vendor risk management software platforms for 2026\"",
+                  "url": "http://duckduckgo.com/?q=site%3Aguideflow.com+%22Compare+the+7+best+vendor+risk+management+software+platforms+for+2026%22",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports buyer comparison behavior around workflow depth, continuous monitoring, risk scoring, and pricing in the vendor-risk category."
+                }
+              ],
+              "derived": {
+                "sortingScore": 75,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 6,
+              "name": "EvidencePing",
+              "slug": "videnceping",
+              "pitch": "Automatically chase missing vendor evidence and document refresh requests before review cycles stall.",
+              "summary": "Helps lean compliance teams send structured reminders for expiring questionnaires, policies, certificates, and supporting files so vendor reviews do not get stuck in manual follow-up loops.",
+              "problem": "Vendor reviews often stall because required evidence is missing, outdated, or scattered across inboxes, forcing repeated manual chasing and delaying approvals or reassessments.",
+              "targetUsers": [
+                "Compliance leads chasing third-party evidence",
+                "Security and GRC generalists collecting vendor documentation",
+                "Operations managers coordinating vendor follow-up"
+              ],
+              "marketType": "B2B",
+              "willingnessToPay": "Competitor positioning around questionnaire automation, continuous oversight, and reduced manual work supports paid demand for a focused evidence-chasing workflow.",
+              "distributionChannels": [
+                "LinkedIn outbound",
+                "GRC and security communities",
+                "Compliance consultant referrals"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 59,
+                "target": 179,
+                "unit": "per month"
+              },
+              "validationScore": 73,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "SaaS subscription with tiered vendor-volume and reminder automation limits",
+              "status": "Validated",
+              "tags": ["vendor-risk", "evidence", "follow-up", "b2b", "workflow"],
+              "evidence": [
+                {
+                  "title": "Third-Party Vendor Risk Management Software | UpGuard",
+                  "url": "http://www.upguard.com/product/vendor-risk",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Supports the need for documentation collection and workflow automation through positioning around questionnaires, onboarding, centralized oversight, and reduced manual work."
+                },
+                {
+                  "title": "vendor risk management software small business pricing",
+                  "url": "http://duckduckgo.com/?q=vendor+risk+management+software+small+business+pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports SMB buyer-intent around workflow automation, monitoring, and vendor-risk software pricing comparisons."
+                }
+              ],
+              "derived": {
+                "sortingScore": 74,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Prosumer Productivity",
+      "slug": "prosumer-productivity",
+      "thesis": "Individual professionals and small creator teams buy focused tools when they produce visible leverage quickly.",
+      "targetMarket": "Power users, creators, and independent operators",
+      "tags": ["prosumer", "productivity"],
+      "evidence": [
+        {
+          "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
+          "url": "http://www.notion.com/pricing",
+          "accessedOn": "2026-07-26",
+          "sourceType": "competitor-pricing",
+          "notes": "Shows active willingness to pay in the prosumer and team knowledge-work market, with tiered pricing, AI features, and workspace-oriented packaging."
+        }
+      ],
+      "subcategories": [
+        {
+          "id": 1,
+          "name": "Research Synthesis",
+          "slug": "research-synthesis",
+          "thesis": "Knowledge workers increasingly need help turning scattered source material into structured output.",
+          "targetMarket": "Researchers, strategists, consultants, and AI-assisted creators",
+          "tags": ["research", "knowledge-work"],
+          "evidence": [
+            {
+              "title": "knowledge worker information overload survey research software pricing note taking",
+              "url": "http://duckduckgo.com/?q=knowledge+worker+information+overload+survey+research+software+pricing+note+taking",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Shows active discoverability around knowledge-worker information overload, note-taking software, and research-oriented tooling."
+            }
+          ],
+          "projects": [
+            {
+              "id": 1,
+              "name": "SignalStack",
+              "slug": "signalstack",
+              "pitch": "Collect, tag, and synthesize research signals into reusable opportunity briefs.",
+              "summary": "Combines source capture, annotation, clustering, and export for solo operators developing market-backed ideas.",
+              "problem": "Research lives in scattered tabs, docs, bookmarks, and chats, making it hard to turn findings into decisions.",
+              "targetUsers": [
+                "Solo founders",
+                "Independent consultants",
+                "Research-heavy creators"
+              ],
+              "marketType": "Prosumer",
+              "willingnessToPay": "Time savings and better decision quality justify paid workflows for users already buying knowledge tools.",
+              "distributionChannels": [
+                "X / LinkedIn content",
+                "Indie hacker communities",
+                "YouTube workflow demos"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 19,
+                "target": 49,
+                "unit": "per month"
+              },
+              "validationScore": 76,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "Subscription with premium export features",
+              "status": "Idea",
+              "tags": ["research", "prosumer", "knowledge"],
+              "evidence": [
+                {
+                  "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
+                  "url": "http://www.notion.com/pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports willingness to pay for note-taking and knowledge-work tooling with multiple paid tiers, AI add-ons, and team seat-based billing."
+                },
+                {
+                  "title": "knowledge worker information overload survey research software pricing note taking",
+                  "url": "http://duckduckgo.com/?q=knowledge+worker+information+overload+survey+research+software+pricing+note+taking",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Shows discoverability of note-taking, knowledge management, and information-overload problem framing tied to knowledge-worker workflows."
+                }
+              ],
+              "derived": {
+                "sortingScore": 75,
+                "opportunitySize": "Medium",
+                "competitionLevel": "High",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 2,
+              "name": "BriefForge",
+              "slug": "briefforge",
+              "pitch": "Turn messy research notes into clean client-ready or founder-ready briefs with structure, citations, and recommended actions.",
+              "summary": "Packages scattered notes, links, and observations into structured briefs for consultants, founders, and strategy operators who need polished outputs fast.",
+              "problem": "Knowledge workers often gather strong research but still spend manual effort reshaping raw notes into usable briefs, memos, and recommendation documents.",
+              "targetUsers": [
+                "Independent consultants delivering research-backed recommendations",
+                "Solo founders evaluating markets",
+                "Strategy and ops generalists creating internal briefs"
+              ],
+              "marketType": "Prosumer",
+              "willingnessToPay": "Users already pay for note-taking and knowledge-work tools, and the final synthesis step is directly tied to client work, decision-making, and time savings.",
+              "distributionChannels": [
+                "LinkedIn content",
+                "Consultant communities",
+                "YouTube workflow demos"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 15,
+                "target": 39,
+                "unit": "per month"
+              },
+              "validationScore": 74,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "Subscription with premium export and template packs",
+              "status": "Validated",
+              "tags": ["research", "briefs", "prosumer", "knowledge-work"],
+              "evidence": [
+                {
+                  "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
+                  "url": "http://www.notion.com/pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports willingness to pay for structured knowledge-work tooling with paid tiers and AI-assisted workspace functionality."
+                },
+                {
+                  "title": "knowledge worker information overload survey research software pricing note taking",
+                  "url": "http://duckduckgo.com/?q=knowledge+worker+information+overload+survey+research+software+pricing+note+taking",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports the broader pain around information overload, note synthesis, and research-to-output workflows."
+                }
+              ],
+              "derived": {
+                "sortingScore": 76,
+                "opportunitySize": "Medium",
+                "competitionLevel": "High",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "AI Meeting Notes",
+          "slug": "ai-meeting-notes",
+          "thesis": "Meeting-heavy professionals and teams already pay for AI tools that transcribe calls, summarize discussions, extract action items, and push outputs into collaboration workflows.",
+          "targetMarket": "Consultants, agencies, founders, operators, and internal teams with frequent virtual meetings",
+          "tags": ["ai", "meetings", "transcription", "productivity"],
+          "evidence": [
+            {
+              "title": "Pricing | Otter.ai",
+              "url": "http://otter.ai/pricing",
+              "accessedOn": "2026-07-26",
+              "sourceType": "competitor-pricing",
+              "notes": "Direct evidence that users and teams pay for AI meeting notes, summaries, action items, collaboration, and integrations."
+            },
+            {
+              "title": "AI meeting notes software pricing transcription productivity",
+              "url": "http://duckduckgo.com/?q=AI+meeting+notes+software+pricing+transcription+productivity",
+              "accessedOn": "2026-07-26",
+              "sourceType": "market-discovery",
+              "notes": "Shows broad category discoverability and active comparison behavior around AI meeting note and transcription tools."
+            }
+          ],
+          "projects": [
+            {
+              "id": 1,
+              "name": "ActionRelay",
+              "slug": "actionrelay",
+              "pitch": "Turn meeting transcripts into clean action items, owners, and follow-ups for small teams and consultants.",
+              "summary": "Captures meeting outputs and converts them into structured next steps, reducing the gap between discussion and execution.",
+              "problem": "Teams often leave meetings with unclear ownership, scattered notes, and poor follow-through even when transcripts exist.",
+              "targetUsers": [
+                "Independent consultants running recurring client calls",
+                "Small internal teams with many sync meetings",
+                "Agency account managers coordinating client work"
+              ],
+              "marketType": "Prosumer",
+              "willingnessToPay": "Existing spend on AI meeting note tools shows users already pay for transcription and summary workflows, creating room for a narrower execution-focused layer.",
+              "distributionChannels": [
+                "LinkedIn content",
+                "Consultant communities",
+                "YouTube productivity demos"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 15,
+                "target": 39,
+                "unit": "per month"
+              },
+              "validationScore": 73,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "Subscription with team collaboration upgrades",
+              "status": "Idea",
+              "tags": ["meetings", "ai", "productivity", "actions"],
+              "evidence": [
+                {
+                  "title": "Pricing | Otter.ai",
+                  "url": "http://otter.ai/pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports willingness to pay and feature expectations around transcription, summaries, action items, and integrations."
+                },
+                {
+                  "title": "AI meeting notes software pricing transcription productivity",
+                  "url": "http://duckduckgo.com/?q=AI+meeting+notes+software+pricing+transcription+productivity",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Shows discoverability and comparison behavior for AI meeting notes, summaries, privacy, and workflow follow-through."
+                }
+              ],
+              "derived": {
+                "sortingScore": 74,
+                "opportunitySize": "Medium",
+                "competitionLevel": "High",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 2,
+              "name": "PrivateScribe",
+              "slug": "privatescribe",
+              "pitch": "Botless, privacy-first AI meeting notes for confidential client and internal conversations.",
+              "summary": "Captures meeting notes without intrusive meeting bots and emphasizes local or privacy-preserving workflows for sensitive discussions.",
+              "problem": "Teams in confidential environments often want AI meeting assistance but reject bot-based recording and cloud-heavy data handling because of privacy, trust, or compliance concerns.",
+              "targetUsers": [
+                "Consultants handling sensitive client calls",
+                "Legal and healthcare-adjacent operators",
+                "Internal leadership teams discussing confidential topics"
+              ],
+              "marketType": "Prosumer",
+              "willingnessToPay": "Privacy-sensitive teams already evaluate bot-free and privacy-first note takers, suggesting a willingness to pay for better trust, control, and compliance posture.",
+              "distributionChannels": [
+                "Privacy-focused productivity communities",
+                "LinkedIn content around secure AI workflows",
+                "Consultant and operator newsletters"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 10,
+                "target": 29,
+                "unit": "per month"
+              },
+              "validationScore": 72,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "Subscription with premium privacy and team controls",
+              "status": "Idea",
+              "tags": ["meetings", "privacy", "ai", "botless"],
+              "evidence": [
+                {
+                  "title": "Meetily",
+                  "url": "http://meetily.ai/",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-positioning",
+                  "notes": "Direct evidence for privacy-first, open-source, bot-free meeting-note positioning including local/privacy-preserving workflows."
+                },
+                {
+                  "title": "botless AI meeting notes privacy pricing",
+                  "url": "http://duckduckgo.com/?q=botless+AI+meeting+notes+privacy+pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Shows active buyer comparison behavior around bot-free AI note takers, privacy controls, compliance, and pricing."
+                }
+              ],
+              "derived": {
+                "sortingScore": 73,
+                "opportunitySize": "Medium",
+                "competitionLevel": "Medium",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            },
+            {
+              "id": 3,
+              "name": "SummaryLoop",
+              "slug": "summaryloop",
+              "pitch": "Generate clean meeting summaries and next-step recaps tailored for client-facing teams and consultants.",
+              "summary": "Focuses on producing polished post-meeting summaries, decision logs, and follow-up drafts for professionals who need to share outcomes quickly after calls.",
+              "problem": "Even when transcripts exist, consultants and client-facing operators still spend manual time rewriting messy AI notes into concise external-facing updates and decision summaries.",
+              "targetUsers": [
+                "Independent consultants sending post-call recaps",
+                "Agency account managers summarizing client meetings",
+                "Founders and operators documenting decisions after syncs"
+              ],
+              "marketType": "Prosumer",
+              "willingnessToPay": "Existing spend on meeting note software plus heavy buyer comparison around summaries and action items suggests room for a focused post-meeting communication layer.",
+              "distributionChannels": [
+                "LinkedIn content",
+                "Consultant communities",
+                "YouTube productivity demos"
+              ],
+              "pricingModel": "subscription",
+              "pricePoint": {
+                "currency": "USD",
+                "startingAt": 12,
+                "target": 34,
+                "unit": "per month"
+              },
+              "validationScore": 73,
+              "buildComplexity": "Medium",
+              "timeToMvp": "2-4 weeks",
+              "revenueModel": "Subscription with premium templates and sharing features",
+              "status": "Validated",
+              "tags": ["meetings", "summaries", "prosumer", "workflow"],
+              "evidence": [
+                {
+                  "title": "Pricing | Otter.ai",
+                  "url": "http://otter.ai/pricing",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "competitor-pricing",
+                  "notes": "Supports willingness to pay and category expectations around automated summaries, action items, exports, and collaboration."
+                },
+                {
+                  "title": "AI meeting notes software pricing transcription productivity",
+                  "url": "http://duckduckgo.com/?q=AI+meeting+notes+software+pricing+transcription+productivity",
+                  "accessedOn": "2026-07-26",
+                  "sourceType": "market-discovery",
+                  "notes": "Supports active comparison behavior around summaries, action items, integrations, and best-tool evaluation in the AI meeting notes category."
+                }
+              ],
+              "derived": {
+                "sortingScore": 74,
+                "opportunitySize": "Medium",
+                "competitionLevel": "High",
+                "aiLeverage": "High",
+                "implementationReadiness": "Medium"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

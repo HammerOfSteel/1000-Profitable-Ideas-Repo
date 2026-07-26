@@ -1,216 +1,688 @@
-# 🗺️ The 1,000 Profitable Projects — Meta-Roadmap
+# 🗺️ 1000 Profitable Ideas — Product + Repository Roadmap
 
-This is the master build plan for **generating the repository itself** (not for building any single
-project inside it). It is designed so you can execute **strictly phase-by-phase**: each phase consumes
-the verified output of the previous one and cannot start until the prior **Exit Gate** passes.
+This is the master implementation plan for turning this repository into two things at once:
+
+1. **A rigorously researched dataset of profitable ideas**
+2. **A user-friendly product for browsing, filtering, comparing, and expanding those ideas**
+
+The work must happen **strictly phase-by-phase**. Each phase depends on verified output from the previous one. No later phase starts until the prior **Exit Gate** passes.
+
+---
 
 ## How to read this roadmap
-- **🎯 Objective** — the single outcome of the phase.
-- **🔗 Builds on** — what verified input this phase requires from the previous phase.
-- **🔬 Tasks (research-first)** — do the research *before* writing folders/files.
-- **📦 Deliverables** — concrete artifacts produced.
-- **✅ Exit Gate (Definition of Done)** — must ALL be true before moving on. Enforced by
-  `python scaffolder.py validate` where possible.
 
-**Golden rule:** Nothing enters the repo on intuition. Every category, sub-category, and idea must
-pass the **Validation Rubric** (defined in Phase 0) with a linked, dated evidence trail.
-
-**Single source of truth:** `taxonomy.json` holds the entire 10 → 100 → 1,000 hierarchy as data.
-Every phase adds one layer to it, and the scaffolder generates the file tree *from* it — so counts
-and structure are always reproducible and verifiable.
+- **🎯 Objective** — the single outcome of the phase
+- **🔗 Builds on** — what verified input this phase requires
+- **🔬 Tasks** — concrete implementation and research work
+- **📦 Deliverables** — artifacts that must exist at phase completion
+- **✅ Exit Gate** — must all be true before the next phase starts
+- **🚢 Push Checkpoint** — once the phase passes, commit and push the current `cline` branch
 
 ---
 
-## Phase 0 — Foundation & Methodology
-> Lock the rules of the game before generating anything. This is the phase most "idea list" projects
-> skip, and it's why they drift into unvalidated guesses. We define *how* an idea qualifies here.
+## Product principles
 
-**🎯 Objective:** A working scaffolding toolchain plus a written, objective standard for what counts
-as "profitable and validated," so every later phase is consistent and auditable.
+- **Evidence before intuition** — ideas only enter the system with linked, dated research evidence.
+- **Schema before scale** — define the data contract before generating large amounts of content.
+- **UI from proven primitives** — use established building blocks, not custom reinvention:
+  - **Next.js + TypeScript**
+  - **Tailwind CSS**
+  - **shadcn/ui**
+  - **TanStack Table** for dense sortable/filterable data views
+  - **Recharts** or equivalent for dashboards/statistics
+  - **React Flow** or equivalent for mindmap / graph exploration
+- **One phase = one shippable checkpoint** — every phase should be small enough to land cleanly and push.
+- **Views must match use cases** — cards, tables, stats, graph/mindmap, and detail views should all exist for a reason.
+- **Templates must be actionable** — every idea should clearly communicate:
+  - who it is for
+  - what problem it solves
+  - how the market validates it
+  - price point / monetization
+  - effort / complexity
+  - how to start executing it
+
+---
+
+## End-state target
+
+By the end of this roadmap, the repo should provide:
+
+- A validated **10 → 100 → 1000** idea hierarchy
+- A canonical structured data model for categories, sub-categories, and ideas
+- A polished web UI for:
+  - exploring ideas
+  - filtering and sorting them
+  - comparing them
+  - understanding category statistics
+  - viewing idea relationships in a mindmap/graph
+- Standardized idea blueprints with clear execution guidance
+- A repeatable workflow for continuously expanding and improving the content
+
+---
+
+## Current progress snapshot
+
+**Last updated:** 2026-07-26
+
+### Completed foundation work
+- [x] Roadmap rewritten to cover both repository/data generation and frontend product implementation
+- [x] Canonical taxonomy contract established in `taxonomy.json` and `docs/TAXONOMY_SCHEMA.md`
+- [x] Validation rubric documented in `docs/VALIDATION_RUBRIC.md`
+- [x] Research standard documented in `docs/RESEARCH_STANDARD.md`
+- [x] `PROJECT_TEMPLATE.md` upgraded to match the canonical schema and actionable blueprint format
+- [x] `scaffolder.py` updated to support:
+  - [x] richer taxonomy skeleton
+  - [x] partial validation by default
+  - [x] strict final validation with `validate --strict`
+  - [x] richer generated category/sub-category/project README content
+
+### Completed frontend slices
+- [x] Dedicated `web/` Next.js app created
+- [x] TypeScript, Tailwind CSS, and `shadcn/ui` set up
+- [x] Sample normalized dataset and helper layer added in `web/src/lib/idea-data.ts`
+- [x] Core dashboard and top-ideas landing page implemented
+- [x] Comparison view implemented at `/compare`
+- [x] Category route implemented at `/ideas/[categorySlug]`
+- [x] Sub-category route implemented at `/ideas/[categorySlug]/[subcategorySlug]`
+- [x] Idea detail route implemented at `/ideas/[categorySlug]/[subcategorySlug]/[ideaSlug]`
+- [x] Advanced hierarchy / mindmap-style view implemented at `/map`
+
+### Completed sample content sync
+- [x] Sample taxonomy data populated with:
+  - [x] 2 categories
+  - [x] 5 sub-categories
+  - [x] 17 ideas
+- [x] Added a new validated expansion slice under `Prosumer Productivity`:
+  - [x] `AI Meeting Notes`
+  - [x] `ActionRelay`
+  - [x] `PrivateScribe`
+  - [x] `SummaryLoop`
+- [x] Added a new validated expansion slice under `Research Synthesis`:
+  - [x] `BriefForge`
+- [x] Added a new validated expansion slice under `Vertical SaaS`:
+  - [x] `Vendor Risk Management`
+  - [x] `VendorPilot`
+  - [x] `QuestionnaireFlow`
+  - [x] `RiskDigest`
+  - [x] `RemediationLane`
+  - [x] `ReviewClock`
+  - [x] `EvidencePing`
+- [x] Added a new validated expansion slice under `Compliance Workflows`:
+  - [x] `ControlLedger`
+- [x] Added a new validated expansion slice under `Client Reporting Automation`:
+  - [x] `ReportBackfill`
+  - [x] `SlideSignal`
+- [x] Queued and documented the next likely expansion niche in research notes:
+  - [x] `Vendor Risk Management for Lean Teams`
+  - [x] strengthened with direct competitor-positioning evidence from `Third-Party Vendor Risk Management Software | UpGuard`
+- [x] Sample repository structure generated under `Categories/`
+- [x] Generated category/sub-category/project indexes now include useful content instead of placeholders
+- [x] Removed tracked `example.com` placeholder evidence from the active taxonomy/frontend sample layers
+- [x] Restored and standardized the canonical root `README.md` entrypoint
+- [x] Sync root `README.md` to the current verified `2 categories / 5 sub-categories / 17 ideas` dataset state
+
+### Verified so far
+- [x] `python3 scaffolder.py validate`
+- [x] `python3 scaffolder.py build taxonomy.json`
+- [x] `CI=1 npm run lint` in `web/`
+- [x] `npm run build` in `web/`
+- [x] Dynamic app routes now compile for:
+  - [x] `/ideas/[categorySlug]`
+  - [x] `/ideas/[categorySlug]/[subcategorySlug]`
+  - [x] `/ideas/[categorySlug]/[subcategorySlug]/[ideaSlug]`
+- [x] Compare view now supports real query-driven category filtering and sorting
+- [x] Consolidated post-navigation verification pass completed:
+  - [x] repo validation passes in partial mode
+  - [x] web lint passes
+  - [x] web production build passes
+- [x] Latest expanded partial dataset also verifies cleanly at:
+  - [x] 2 categories
+  - [x] 5 sub-categories
+  - [x] 17 projects
+- [x] `python3 scaffolder.py validate --strict` currently fails **for the expected reason**: the dataset is still intentionally below the final 10 / 100 / 1000 target
+  - [x] Current strict-mode counts are `2 categories / 5 sub-categories / 17 projects`
+
+### Still remaining
+- [ ] Expand taxonomy from this seed dataset toward the full 10 / 100 / 1000 target
+- [ ] Replace weaker market-discovery evidence with stronger direct research where possible
+- [ ] Fill blueprint content at scale
+- [ ] Pass `python3 scaffolder.py validate --strict` by reaching the full target counts
+- [ ] Final QA, accessibility, performance, and release readiness pass
+
+---
+
+## Phase 0 — Product Reset, Scope Lock, and Architecture Direction
+
+> Before building anything further, align the repository around the actual product we want:
+> an evidence-backed idea database with a modern exploration UI.
+
+**🎯 Objective:** Replace the current repo-only roadmap with a product-aware roadmap and lock the initial technical direction.
+
+**🔗 Builds on:** Current repository mission in `README.md`, current `PROJECT_TEMPLATE.md`, current `scaffolder.py`.
 
 **🔬 Tasks**
-- [ ] Initialize the root directory and Git version control.
-- [ ] Add the fully fleshed-out root `README.md` (master index + methodology).
-- [ ] Finalize `PROJECT_TEMPLATE.md` as the canonical blueprint layout for all 1,000 ideas.
-- [ ] Confirm `scaffolder.py` runs: `init`, `build <taxonomy.json>`, and `validate` commands.
-- [ ] **Define the Validation Rubric** in `docs/VALIDATION_RUBRIC.md`. Score each idea 0–100 across
-      weighted criteria, e.g.:
-  - [ ] **Demand** (search volume / active communities / recurring pain) — 25 pts
-  - [ ] **Willingness to Pay** (people already pay agencies/tools/manual labor) — 25 pts
-  - [ ] **Competition Gap** (weak, overpriced, or missing incumbents) — 20 pts
-  - [ ] **Build Feasibility** (shippable MVP by a solo AI-assisted dev) — 20 pts
-  - [ ] **Distribution** (a reachable, existing channel to the audience) — 10 pts
-  - [ ] Set the **minimum passing score** (recommended: **≥ 70/100**) an idea must hit to be included.
-- [ ] **Define the Research Standard** in `docs/RESEARCH_STANDARD.md`: every claim needs a dated
-      source link; list allowed evidence types (search-trend data, competitor pricing/reviews,
-      marketplace/API growth, comparable indie-hacker revenue).
-- [ ] **Define `taxonomy.json` schema** (see below) and naming conventions (folder = `NN-Name`,
-      projects = `Project-NNN-Name`, ASCII, underscores for spaces).
-- [ ] Create the primary parent `Categories/` directory.
+- [x] Confirm the roadmap now covers both:
+  - [x] repository/data generation
+  - [x] frontend product implementation
+- [x] Confirm the initial app stack:
+  - [x] Next.js
+  - [x] TypeScript
+  - [x] Tailwind CSS
+  - [x] shadcn/ui
+- [x] Decide whether the frontend lives:
+  - [ ] at repo root, or
+  - [x] in a dedicated `app/` or `web/` directory
+- [x] Define the high-level product surface areas:
+  - [x] Dashboard / stats overview
+  - [x] Category browser
+  - [x] Idea explorer
+  - [x] Idea detail page
+  - [x] Compare / shortlist workflow
+  - [x] Mindmap / graph exploration view
+- [~] Define what “phase completion” means operationally:
+  - [x] code complete
+  - [x] docs updated
+  - [x] validated locally
+  - [ ] pushed to `cline`
 
-**📦 Deliverables:** `README.md`, `PROJECT_TEMPLATE.md`, working `scaffolder.py`,
-`docs/VALIDATION_RUBRIC.md`, `docs/RESEARCH_STANDARD.md`, empty `taxonomy.json` skeleton, `Categories/`.
-
-**`taxonomy.json` schema (the spine of the whole repo):**
-```jsonc
-{
-  "categories": [
-    {
-      "id": 1, "name": "Category Name", "thesis": "one-line macro rationale",
-      "subcategories": [
-        {
-          "id": 1, "name": "Sub Name", "thesis": "why this niche is profitable",
-          "projects": [
-            { "id": 1, "name": "Project Name", "pitch": "one-liner", "score": 0, "evidence": [] }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
+**📦 Deliverables**
+- Updated `TODO.md`
+- Locked initial stack decision
+- Agreed product surface list
+- Agreed repo layout direction
 
 **✅ Exit Gate**
-- [ ] `python scaffolder.py init` and `python scaffolder.py validate` both run without error.
-- [ ] Validation Rubric + Research Standard are written, with a defined minimum passing score.
-- [ ] `taxonomy.json` exists and validates against the agreed schema (empty layers are OK).
-- [ ] Everything committed to Git.
+- [x] `TODO.md` reflects the actual intended product
+- [x] Initial stack is explicitly documented
+- [x] Product surface areas are clearly named
+- [x] Future implementation can proceed without re-deciding scope
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push the roadmap reset to the current `cline` branch
 
 ---
 
-## Phase 1 — Macro Strategy (The 10 Categories)
-> Choose the 10 broad markets. Get these wrong and everything downstream inherits the mistake, so
-> each category needs an explicit macro thesis, not a vibe.
+## Phase 1 — Canonical Idea Schema and Taxonomy Contract
 
-**🎯 Objective:** Ten locked, non-overlapping master categories, each justified by a macro trend.
+> The UI will only be as good as the structure behind it. Before generating large amounts of content or building views, define the canonical shape of an idea.
 
-**🔗 Builds on:** Phase 0's rubric, research standard, and `taxonomy.json` schema.
+**🎯 Objective:** Establish the single source of truth for categories, sub-categories, ideas, research evidence, and execution metadata.
+
+**🔗 Builds on:** Phase 0 stack/layout direction.
 
 **🔬 Tasks**
-- [ ] Research macro-economic trends, persistent software needs, and current AI capabilities.
-- [ ] Draft a **candidate list of 15–20 categories**, each with a one-line thesis + supporting link.
-- [ ] Score/rank candidates for market size, durability, and solo-dev addressability.
-- [ ] **Lock the top 10.** Verify they are broad, distinct, and collectively cover the opportunity space
-      without heavy overlap.
-- [ ] Write each category's `thesis` into the `categories[]` layer of `taxonomy.json`.
-- [ ] Run `python scaffolder.py build taxonomy.json` to generate `Categories/NN-Name/` folders.
-- [ ] Draft each category `README.md` (thesis + placeholder index for its 10 sub-categories).
-- [ ] Update the root `README.md` Top-10 index with the real category names.
+- [x] Expand the `taxonomy.json` contract beyond name + score + evidence
+- [x] Define required fields for **categories**
+  - [x] `id`
+  - [x] `name`
+  - [x] `slug`
+  - [x] `thesis`
+  - [x] `evidence`
+- [x] Define required fields for **sub-categories**
+  - [x] `id`
+  - [x] `name`
+  - [x] `slug`
+  - [x] `thesis`
+  - [x] `targetMarket`
+  - [x] `evidence`
+- [x] Define required fields for **ideas/projects**
+  - [x] `id`
+  - [x] `name`
+  - [x] `slug`
+  - [x] `pitch`
+  - [x] `summary`
+  - [x] `problem`
+  - [x] `targetUsers`
+  - [x] `marketType` (B2B / B2C / prosumer / marketplace / internal tooling etc.)
+  - [x] `willingnessToPay`
+  - [x] `distributionChannels`
+  - [x] `pricingModel`
+  - [x] `pricePoint`
+  - [x] `validationScore`
+  - [x] `buildComplexity`
+  - [x] `timeToMvp`
+  - [x] `revenueModel`
+  - [x] `tags`
+  - [x] `status`
+  - [x] `evidence`
+- [x] Define optional derived fields for product UX
+  - [x] `sortingScore`
+  - [x] `opportunitySize`
+  - [x] `competitionLevel`
+  - [x] `aiLeverage`
+  - [x] `implementationReadiness`
+- [x] Align `PROJECT_TEMPLATE.md` with the canonical schema
+- [x] Document what fields are:
+  - [x] human-authored
+  - [x] research-derived
+  - [x] computed for UI/statistics
+- [x] Define naming and slugging conventions
+- [x] Ensure `scaffolder.py` can evolve from this schema rather than fighting it
 
-**📦 Deliverables:** 10 category folders + `README.md` files; `taxonomy.json` category layer populated;
-root index updated.
+**📦 Deliverables**
+- Updated canonical taxonomy contract
+- Updated project blueprint field list
+- Explicit required vs optional field definitions
+- Schema decisions documented in the repo
 
 **✅ Exit Gate**
-- [ ] Exactly **10** categories exist in both `taxonomy.json` and `Categories/` (validated by scaffolder).
-- [ ] Each category has a written macro thesis with at least one dated source link.
-- [ ] No two categories substantially overlap; root README index reflects them.
+- [x] A single canonical idea schema exists
+- [x] Every field in the template maps to structured data
+- [x] The schema supports both generation workflows and frontend display
+- [x] No critical UI requirement depends on undefined data
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push schema contract changes to `cline`
 
 ---
 
-## Phase 2 — Meso Segmentation (The 100 Sub-Categories)
-> Turn each broad market into 10 concrete, profitable niches. This is where "a category" becomes
-> "a place a solo dev could actually win."
+## Phase 2 — Research Rubric, Completion Rules, and Blueprint Template Hardening
 
-**🎯 Objective:** Exactly 100 distinct, profitable sub-categories (10 per category).
+> Before volume, lock the quality bar. Every idea must be readable, comparable, and expandable.
 
-**🔗 Builds on:** The 10 locked categories and their theses from Phase 1.
+**🎯 Objective:** Define exactly what it means for an idea to be “valid,” “display-ready,” and “execution-ready.”
+
+**🔗 Builds on:** Phase 1 canonical schema.
 
 **🔬 Tasks**
-- [ ] For each category, research 10 profitable sub-niches (specific workflows, industries, or buyer
-      segments) — each with a one-line profitability thesis + evidence link.
-- [ ] Enforce distinctness: no duplicate or near-duplicate sub-categories **within or across** categories.
-- [ ] Verify the segmentation yields **exactly 100** sub-categories total.
-- [ ] Write the `subcategories[]` layer into `taxonomy.json` under each category.
-- [ ] Run `python scaffolder.py build taxonomy.json` to generate the sub-category folders.
-- [ ] Draft each sub-category `README.md` (thesis + placeholder index for its 10 projects).
-- [ ] Update each category `README.md` to link its 10 sub-categories.
+- [x] Finalize the validation rubric in structured form
+  - [x] Demand
+  - [x] Willingness to pay
+  - [x] Competition gap
+  - [x] Feasibility
+  - [x] Distribution
+- [x] Set the minimum acceptance score
+- [x] Define evidence standards
+  - [x] dated links required
+  - [x] allowed source types
+  - [x] competitor and pricing evidence expectations
+- [x] Define blueprint completeness states
+  - [x] `Idea`
+  - [x] `Validated`
+  - [x] `Blueprinted`
+  - [x] `Ready to Build`
+- [x] Upgrade `PROJECT_TEMPLATE.md` so every idea clearly exposes:
+  - [x] user group
+  - [x] buyer / operator persona
+  - [x] price point hypothesis
+  - [x] effort / complexity
+  - [x] market wedge
+  - [x] execution starting point
+- [x] Add a “How to Start” section to the blueprint standard
+- [x] Add “What to Validate Next” to help users continue fleshing out ideas
+- [x] Define which fields must exist before an idea can appear in the UI
+- [x] Define which fields are required before an idea can be called “Blueprinted”
 
-**📦 Deliverables:** 100 sub-category folders + `README.md` files; `taxonomy.json` sub-category layer
-populated; category indexes linked.
+**📦 Deliverables**
+- Validation rubric and research standard
+- Hardened `PROJECT_TEMPLATE.md`
+- Clearly defined idea completion statuses
+- Display-readiness checklist for ideas
 
 **✅ Exit Gate**
-- [ ] Scaffolder validates **exactly 100** sub-categories (10 under every category).
-- [ ] Every sub-category has a profitability thesis + at least one dated source.
-- [ ] No duplicates; every category README links all 10 of its sub-categories.
+- [x] Every displayed idea has a consistent quality standard
+- [x] Template fields support user decision-making, not just documentation
+- [x] A reader can understand who the idea is for, why it matters, and how to begin
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push rubric/template hardening to `cline`
 
 ---
 
-## Phase 3 — Micro Ideation (The 1,000 Projects)
-> Generate the actual ideas — and score every one. An idea that can't clear the rubric does not get a
-> folder. This is the phase that guarantees "evidence-based profitable," not "1,000 random ideas."
+## Phase 3 — Frontend Foundation and Design System Setup
 
-**🎯 Objective:** Exactly 1,000 unique project ideas (10 per sub-category), each scoring ≥ the
-Phase 0 minimum on the Validation Rubric.
+> Build the shell before building the rooms.
 
-**🔗 Builds on:** The 100 sub-categories from Phase 2 and the rubric from Phase 0.
+**🎯 Objective:** Create the frontend foundation using proven dashboard/application primitives.
+
+**🔗 Builds on:** Phase 2 data and quality contracts.
 
 **🔬 Tasks**
-- [ ] For each sub-category, generate 10 specific project ideas (name + one-liner pitch).
-- [ ] **Score every idea** against the Validation Rubric; record the `score` and the `evidence[]`
-      (dated links) in `taxonomy.json`. Discard/replace any idea below the minimum score.
-- [ ] Run a **global de-duplication pass** — no idea should be a near-clone of another across the 1,000.
-- [ ] Verify the grand total is **exactly 1,000** and that all pass the minimum score.
-- [ ] Run `python scaffolder.py build taxonomy.json` to generate every
-      `Project-NNN-Name/` folder (with empty `docs/` and `todo/`).
-- [ ] Update each sub-category `README.md` to link its 10 projects with pitch + score.
+- [x] Scaffold the frontend app in the chosen location
+- [x] Set up:
+  - [x] TypeScript
+  - [x] Tailwind CSS
+  - [x] shadcn/ui
+  - [x] linting / formatting
+- [~] Create the app shell:
+  - [ ] top navigation
+  - [ ] sidebar navigation
+  - [x] responsive layout
+  - [x] shared page container
+- [~] Establish design tokens and usage rules
+  - [x] spacing
+  - [x] typography
+  - [x] color usage
+  - [ ] card/table/chart conventions
+- [~] Add shared reusable UI primitives
+  - [x] stat cards
+  - [x] section headers
+  - [ ] filters panel
+  - [ ] badges
+  - [ ] evidence/source chips
+  - [ ] score display
+  - [ ] empty/loading/error states
+- [x] Decide route structure for the product
+- [x] Create placeholder pages for all major surfaces
 
-**📦 Deliverables:** 1,000 project folders (each with `README.md` stub, `docs/`, `todo/`);
-`taxonomy.json` project layer fully populated with scores + evidence; sub-category indexes linked.
+**📦 Deliverables**
+- Running frontend app
+- Shared layout and navigation
+- Base component system
+- Placeholder route structure
 
 **✅ Exit Gate**
-- [ ] Scaffolder validates **exactly 1,000** projects (10 under every sub-category).
-- [ ] Every project has `score ≥ minimum` and at least one dated evidence link in `taxonomy.json`.
-- [ ] Global de-dup pass complete; every sub-category README lists its 10 projects.
+- [x] App runs locally without structural errors
+- [x] Layout is responsive and reusable
+- [~] No major UI work requires rethinking the shell
+- [x] Proven component primitives are in place
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push frontend foundation to `cline`
 
 ---
 
-## Phase 4 — Blueprint Generation (Documentation & Workflows)
-> Now that the 1,000 validated ideas exist as data, turn each into a complete, buildable blueprint.
-> This is the largest phase; work category-by-category so progress is checkpointable.
+## Phase 4 — Data Ingestion, Normalization, and View Model Layer
 
-**🎯 Objective:** Every one of the 1,000 projects has a fully fleshed-out `README.md`, `docs/`, and a
-research-first `todo/` execution plan.
+> The UI should consume stable view data, not raw ad hoc files.
 
-**🔗 Builds on:** The 1,000 scored ideas + folders from Phase 3, using `PROJECT_TEMPLATE.md`.
+**🎯 Objective:** Build the pipeline that transforms repository content into predictable frontend-consumable data.
 
-**🔬 Tasks (per project)**
-- [ ] Flesh out the project `README.md` from `PROJECT_TEMPLATE.md`, carrying over the score, pitch,
-      and evidence already captured in `taxonomy.json` (no re-research from scratch).
-- [ ] Flesh out `docs/` — architecture, data model, and specifications (`docs/architecture_and_specs.md`).
-- [ ] Cross-link: the project README references its `docs/` and `todo/` artifacts.
-- [ ] Flesh out `todo/` as a phase-by-phase build plan, driven by a **research-first** approach per phase:
-  - [ ] `Phase_1_Research_and_Validation.md` — confirm demand, competitors, pricing before building.
-  - [ ] `Phase_2_MVP_Build.md` — the smallest shippable slice (from the blueprint's MVP scope).
-  - [ ] `Phase_3_Launch_and_Monetization.md` — distribution channel + pricing + first customers.
-- [ ] Include explicit tasks and sub-tasks for how to implement the project.
-
-**📦 Deliverables:** 1,000 completed blueprints (README + docs + todo), consistent with the template.
-
-**✅ Exit Gate**
-- [ ] 100% of project READMEs are filled from the template (no unreplaced `[bracket]` prompts).
-- [ ] Every project has non-stub `docs/` and a multi-phase `todo/` plan.
-- [ ] Every project README links its own `docs/` and `todo/`.
-
----
-
-## Phase 5 — Review & Finalization
-> Prove the repository actually contains what it claims, then ship it.
-
-**🎯 Objective:** A verified, link-clean, publishable repository of exactly 1,000 blueprints.
-
-**🔗 Builds on:** The completed blueprints from Phase 4.
+**🔗 Builds on:** Phase 3 frontend shell and Phase 1–2 schema rules.
 
 **🔬 Tasks**
-- [ ] Run `python scaffolder.py validate` — confirm 10 categories, 100 sub-categories, 1,000 projects.
-- [ ] Audit that exactly **1,000 unique** project `README.md` blueprints exist (no duplicate names/pitches).
-- [ ] Verify all internal links (root ↔ category ↔ sub-category ↔ project, and README ↔ docs/todo).
-- [ ] Quality-sample: spot-check a random N projects per category for evidence links + template completeness.
-- [ ] Confirm every included idea still meets the minimum validation score.
-- [ ] Finalize the root `README.md` index and commit; tag a release for public or personal deployment.
+- [x] Decide how frontend data is loaded initially
+  - [x] direct JSON import
+  - [ ] generated static data files
+  - [ ] build-time normalization script
+- [x] Create a normalized frontend data layer for:
+  - [x] categories
+  - [x] sub-categories
+  - [x] ideas
+  - [x] tags
+  - [x] scores
+  - [x] statistics
+- [x] Generate derived values for UX
+  - [x] idea counts
+  - [x] average scores
+  - [ ] market breakdowns
+  - [x] complexity distribution
+  - [ ] pricing distribution
+- [~] Create filter/sort definitions
+  - [x] by category
+  - [x] by sub-category
+  - [x] by score
+  - [x] by effort
+  - [x] by market type
+  - [x] by pricing model
+  - [x] by readiness/status
+- [x] Create seeded example content sufficient for UI development
+- [x] Ensure data errors fail loudly instead of silently degrading
 
-**📦 Deliverables:** Final audit report (pass/fail per gate), clean link graph, tagged release.
+**📦 Deliverables**
+- Frontend-consumable normalized data layer
+- Derived statistics model
+- Stable filters/sorts contract
+- Seed dataset for development
 
 **✅ Exit Gate**
-- [ ] Counts verified: 10 / 100 / 1,000, zero duplicates.
-- [ ] Zero broken internal links.
-- [ ] All quality-sample checks pass; repository tagged and ready to ship.
+- [x] UI can render from stable structured data
+- [x] Filters and stats are driven by schema, not hardcoded assumptions
+- [x] Adding future ideas/categories does not require rewriting views
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push ingestion/view-model work to `cline`
+
+---
+
+## Phase 5 — Core Explorer UX: Dashboard, Lists, Cards, Tables, Detail Pages
+
+> Deliver the main browsing experience first: clear, useful, searchable, sortable.
+
+**🎯 Objective:** Ship the primary exploration experience for users who want to quickly find promising ideas.
+
+**🔗 Builds on:** Phase 4 normalized data layer.
+
+**🔬 Tasks**
+- [x] Build the **Dashboard** view
+  - [x] total ideas
+  - [x] category distribution
+  - [x] average validation score
+  - [x] complexity breakdown
+  - [ ] monetization / pricing snapshots
+- [~] Build the **Category browser**
+  - [x] category cards
+  - [x] category detail pages
+  - [x] linked sub-category navigation
+- [~] Build the **Idea explorer**
+  - [x] card view
+  - [ ] dense table view
+  - [ ] quick search
+  - [ ] multi-filter support
+  - [ ] multi-sort support
+- [x] Build the **Idea detail page**
+  - [x] pitch
+  - [x] summary
+  - [x] target users
+  - [ ] market signals
+  - [x] price point
+  - [x] effort
+  - [x] validation score
+  - [x] evidence links
+  - [ ] how-to-start section
+- [ ] Add URL-persisted filter/sort state where sensible
+- [x] Add compare / shortlist capability for users evaluating multiple ideas
+
+**📦 Deliverables**
+- Dashboard page
+- Category and sub-category browsing pages
+- Explorer with card and table modes
+- Detailed idea page
+- Compare / shortlist baseline
+
+**✅ Exit Gate**
+- [x] Users can discover and compare ideas without reading raw repo files
+- [~] Filters and sorts are genuinely useful
+- [~] Detail pages answer “what is this, for whom, why now, how hard, how to start?”
+- [x] The main UX is already valuable even with partial data population
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push core explorer UX to `cline`
+
+---
+
+## Phase 6 — Advanced Views: Mindmap, Relationship Navigation, and Insight Surfaces
+
+> Once the basic explorer works, add views that help users think, not just search.
+
+**🎯 Objective:** Add richer visualizations for understanding relationships, clusters, and strategic opportunity spaces.
+
+**🔗 Builds on:** Phase 5 core explorer UX.
+
+**🔬 Tasks**
+- [x] Build a **mindmap / graph view**
+  - [x] categories → sub-categories → ideas
+  - [ ] pan/zoom
+  - [ ] click-through to detail views
+  - [ ] visual differentiation by score/status/complexity
+- [x] Build at least one **matrix / strategic view**
+  - [x] effort vs opportunity
+  - [ ] complexity vs validation
+  - [ ] B2B vs B2C vs price positioning
+- [~] Add insight surfaces that help prioritization
+  - [ ] best low-effort opportunities
+  - [ ] highest-priced niches
+  - [ ] most research-complete ideas
+  - [x] underdeveloped categories
+- [ ] Add relationship aids
+  - [ ] related ideas
+  - [ ] similar niches
+  - [ ] adjacent buyer groups
+- [~] Ensure these views remain legible on real-world data volumes
+
+**📦 Deliverables**
+- Mindmap / graph navigation
+- At least one strategic matrix view
+- Relationship-based idea recommendations
+- Additional statistics / insight surfaces
+
+**✅ Exit Gate**
+- [x] Users can move between overview and detail intuitively
+- [~] Advanced views reveal something useful beyond the core list/table
+- [~] Graph/matrix views support actual prioritization decisions
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push advanced exploration views to `cline`
+
+---
+
+## Phase 7 — Controlled Data Population: 10 Categories → 100 Sub-Categories → 1000 Ideas
+
+> Now scale the content using the locked schema, template, and product surfaces already proven by sample data.
+
+**🎯 Objective:** Populate the repository in validated batches without sacrificing consistency or usability.
+
+**🔗 Builds on:** Phase 6 stable product surfaces and Phase 1–2 quality rules.
+
+**🔬 Tasks**
+- [~] Populate the **10 categories** with macro theses and evidence
+- [~] Populate the **100 sub-categories** with niche theses and evidence
+- [~] Populate ideas in controlled batches
+  - [x] start with one pilot category
+  - [ ] then one full set of 10 sub-categories
+  - [ ] then scale category-by-category
+- [x] Ensure every idea includes required structured fields
+- [x] Run de-duplication across all ideas
+- [x] Validate score thresholds before publication into the main dataset
+- [x] Generate folders/files from the canonical taxonomy where appropriate
+- [x] Keep the UI usable throughout partial-population states
+- [x] Update indexes and statistics continuously as the dataset grows
+
+**📦 Deliverables**
+- Populated taxonomy across categories/sub-categories/ideas
+- Research-backed evidence entries
+- Generated repo structure aligned to the dataset
+- No major mismatch between structured data and blueprint files
+
+**✅ Exit Gate**
+- [ ] Exactly 10 categories exist
+- [ ] Exactly 100 sub-categories exist
+- [~] Idea population is on track toward 1000 without schema drift
+- [x] No displayed idea violates the minimum quality bar
+- [x] Data and UI stay in sync
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push each completed population batch to `cline`
+- [ ] Commit and push again when the full 10/100/1000 target is reached
+
+---
+
+## Phase 8 — Blueprint Completion and Execution Guidance at Scale
+
+> A list of ideas is useful; a list of ideas with concrete “what next?” guidance is much more valuable.
+
+**🎯 Objective:** Bring ideas from “visible in the product” to “actionable as blueprints.”
+
+**🔗 Builds on:** Phase 7 populated dataset.
+
+**🔬 Tasks**
+- [~] Complete idea blueprints category-by-category
+- [~] Ensure each idea has:
+  - [x] problem statement
+  - [x] target audience
+  - [x] evidence-backed profitability logic
+  - [~] competitor landscape
+  - [x] monetization strategy
+  - [~] recommended stack
+  - [x] MVP scope
+  - [x] key risks
+  - [x] how-to-start guidance
+- [~] Flesh out linked `docs/` where appropriate
+- [x] Flesh out linked `todo/` execution phases
+- [x] Mark blueprint completeness in structured data
+- [ ] Surface blueprint readiness inside the UI
+- [~] Identify ideas needing more research vs ideas ready to build
+
+**📦 Deliverables**
+- Actionable blueprint content at scale
+- Completion-status metadata
+- UI support for identifying ready-to-build ideas
+
+**✅ Exit Gate**
+- [~] Users can not only browse ideas, but act on them
+- [~] Blueprinted ideas expose enough detail to start execution
+- [x] Completion status is visible and honest
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push each completed blueprint batch to `cline`
+
+---
+
+## Phase 9 — QA, Accessibility, Performance, and Release Readiness
+
+> Finish by making the product trustworthy, fast, and shippable.
+
+**🎯 Objective:** Validate structure, UX quality, and release readiness across both the repository and the app.
+
+**🔗 Builds on:** Phase 8 completed product + content system.
+
+**🔬 Tasks**
+- [~] Validate counts and structure
+- [~] Validate internal links between repo artifacts
+- [x] Validate frontend routes and rendering
+- [ ] Test filter/sort/search behavior
+- [~] Test graph/mindmap usability
+- [ ] Review responsive behavior
+- [ ] Review accessibility
+  - [ ] keyboard navigation
+  - [ ] contrast
+  - [ ] semantic headings/labels
+- [~] Review performance
+  - [x] large list rendering
+  - [ ] chart rendering
+  - [ ] graph rendering
+  - [x] build-time data generation
+- [~] Spot-check idea quality across categories
+- [ ] Finalize README and release instructions
+
+**📦 Deliverables**
+- Verified structure
+- QA pass notes
+- Release-ready README and app
+- Clean publishable state
+
+**✅ Exit Gate**
+- [ ] Data counts and hierarchy are correct
+- [x] Core UX works on realistic data
+- [ ] Accessibility and performance are acceptable
+- [ ] Repo and product are both ready to publish/use
+
+**🚢 Push Checkpoint**
+- [ ] Commit and push the release-ready state to `cline`
+
+---
+
+## Suggested implementation cadence
+
+To keep work small and reviewable, prefer this rhythm inside every phase:
+
+1. Define or adjust the contract
+2. Implement the smallest useful slice
+3. Validate locally
+4. Update docs
+5. Commit
+6. Push `cline`
+
+---
+
+## What should happen next
+
+The next practical implementation order from the **current** state is:
+
+1. **Phase 7 expansion** — keep growing from the current seed dataset of 2 categories / 5 sub-categories / 17 ideas using real research
+2. **Phase 5/6 refinement** — add stronger filter/sort explorer behavior on top of the now-complete route-level browsing flow
+3. **Phase 8 refinement** — improve generated blueprint richness and surface readiness more clearly in the UI
+4. **Phase 9** — accessibility, performance, and final release checks
+5. **Final strict gate** — `python3 scaffolder.py validate --strict` has already been tested and currently fails as expected; return to it only after the full 10/100/1000 target exists
+
+Everything after this point should build on the existing verified slices instead of restarting any foundation work.

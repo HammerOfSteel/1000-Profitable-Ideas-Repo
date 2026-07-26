@@ -1,0 +1,99 @@
+# ActionRelay
+
+> **One-liner:** Turn meeting transcripts into clean action items, owners, and follow-ups for small teams and consultants.
+
+| Field | Value |
+| :--- | :--- |
+| **Project ID** | `Project-001` |
+| **Category → Sub-Category** | `Prosumer Productivity` → `AI Meeting Notes` |
+| **Slug** | `actionrelay` |
+| **Status** | `Idea` |
+| **Validation Score** | `73/100` |
+| **Market Type** | `Prosumer` |
+| **Build Complexity** | `Medium` |
+| **Time-to-MVP (AI-assisted)** | `2-4 weeks` |
+| **Primary Revenue Model** | `Subscription with team collaboration upgrades` |
+| **Pricing Hypothesis** | `USD 15 → 39 / per month` |
+
+---
+
+## 📖 Overview
+Captures meeting outputs and converts them into structured next steps, reducing the gap between discussion and execution.
+
+## 🛑 The Problem
+Teams often leave meetings with unclear ownership, scattered notes, and poor follow-through even when transcripts exist.
+
+## 🎯 Target Audience
+- **Primary buyer:** Independent consultants running recurring client calls
+- **Primary operator/user:** Small internal teams with many sync meetings
+- **Secondary users/stakeholders:** Expand during blueprint refinement
+- **Target market:** Consultants, agencies, founders, operators, and internal teams with frequent virtual meetings
+- **Where they already gather:**
+- LinkedIn content
+- Consultant communities
+- YouTube productivity demos
+- **Willingness-to-pay signal:** Existing spend on AI meeting note tools shows users already pay for transcription and summary workflows, creating room for a narrower execution-focused layer.
+
+## 🧠 Chain of Logic & Evidence of Profitability
+> First-principles reasoning. Every claim should stay linked to dated sources as the blueprint matures.
+
+- **Premise → Conclusion:** Teams often leave meetings with unclear ownership, scattered notes, and poor follow-through even when transcripts exist. This supports a solution shaped like: Captures meeting outputs and converts them into structured next steps, reducing the gap between discussion and execution.
+- **Demand Evidence:** See source trail below and expand with more demand-specific research.
+- **Willingness to Pay Evidence:** Existing spend on AI meeting note tools shows users already pay for transcription and summary workflows, creating room for a narrower execution-focused layer.
+- **Competition Gap Evidence:** Focused wedge on ai meeting notes workflows for consultants, agencies, founders, operators, and internal teams with frequent virtual meetings.
+- **Distribution Evidence:** Initial reachable channels exist through the listed communities and outreach surfaces.
+
+### References
+1. [Pricing | Otter.ai](http://otter.ai/pricing) — competitor-pricing — accessed 2026-07-26 — Supports willingness to pay and feature expectations around transcription, summaries, action items, and integrations.
+2. [AI meeting notes software pricing transcription productivity](http://duckduckgo.com/?q=AI+meeting+notes+software+pricing+transcription+productivity) — market-discovery — accessed 2026-07-26 — Shows discoverability and comparison behavior for AI meeting notes, summaries, privacy, and workflow follow-through.
+
+## 🥊 Competitive Landscape
+| Competitor / Alternative | Price | Weakness / Gap | Your Wedge |
+| :--- | :--- | :--- | :--- |
+| Research in progress | See evidence trail | Expand during blueprint refinement | Focused wedge on ai meeting notes workflows for consultants, agencies, founders, operators, and internal teams with frequent virtual meetings. |
+
+## 💳 Monetization Strategy
+- **Revenue model:** Subscription with team collaboration upgrades
+- **Price point hypothesis:** USD 15 → 39 / per month
+- **Expansion path:** Add adjacent tiers, team plans, or service-assisted workflows after the MVP proves traction.
+- **Path to first $1k MRR:** Validate early demand through the listed channels, then convert initial users into repeat paying customers.
+
+## 🛠️ Build Profile
+- **Recommended stack:** Next.js + TypeScript + Tailwind + managed backend/services appropriate to the workflow
+- **Key dependencies / APIs:** Add concrete integrations during architecture refinement
+- **Riskiest technical assumption:** Confirm the core workflow can be delivered with acceptable reliability and cost
+- **Operational burden:** Clarify onboarding, support, and compliance overhead during implementation planning
+
+## 🎯 MVP Scope (First Shippable Slice)
+- **In scope (v0.1):** Deliver the narrowest version that proves the core workflow and value promise
+- **Explicitly deferred:** Nice-to-have automation, advanced collaboration, and deeper analytics
+- **Success signal:** Users can complete the core workflow and find enough value to continue evaluating or paying
+
+## ⚠️ Key Risks & Unknowns
+- **Market risk:** Validate that the target segment prioritizes this pain enough to act
+- **Technical risk:** Verify the core workflow can be shipped with manageable complexity
+- **Distribution risk:** Confirm the listed channels actually convert attention into conversations
+- **Moat / defensibility:** Strengthen through sharper workflow fit, UX, and distribution learning
+- **Regulatory / trust risk:** Expand if the workflow touches sensitive or regulated data
+
+## 🚀 How to Start
+1. Review the linked evidence and identify the strongest pain signal to validate further.
+2. Prototype the thinnest workflow that demonstrates the promised outcome.
+3. Reach out through one listed distribution channel to test interest with real target users.
+4. Measure whether users understand the pitch, value the workflow, and will pay or commit to next steps.
+
+## 🔍 What to Validate Next
+- Confirm sharper pricing anchors in the target niche
+- Identify the strongest direct competitors or manual alternatives
+- Validate the fastest path from first user conversation to MVP usage
+
+---
+
+## 📁 Documentation & Execution Links
+- **Project Specifications:** [`./docs/`](./docs/) — architecture, data model, and detailed specs
+- **Execution Roadmap:** [`./todo/`](./todo/) — phase-by-phase build plan
+
+## Source Target Users
+- Independent consultants running recurring client calls
+- Small internal teams with many sync meetings
+- Agency account managers coordinating client work
