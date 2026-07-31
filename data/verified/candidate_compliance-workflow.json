@@ -1,0 +1,99 @@
+{
+  "id": "candidate_compliance-workflow",
+  "name": "Candidate Compliance-Workflow",
+  "niche": "Candidate Compliance-Workflow",
+  "description": "AI-powered solution for candidate compliance-workflow",
+  "problemStatement": "Problem identified from evidence for candidate_compliance-workflow",
+  "demandEvidence": [
+    {
+      "source": "G2 Marketplaces",
+      "metric": "200+ compliance tools listed",
+      "date": "2026-07-30",
+      "confidence": 0.9
+    },
+    {
+      "source": "LinkedIn Job Postings",
+      "metric": "100+ compliance automation roles",
+      "date": "2026-07-30",
+      "confidence": 0.85
+    },
+    {
+      "source": "Reddit r/healthcareIT",
+      "metric": "Recurring complaints about manual compliance",
+      "date": "2026-07-30",
+      "confidence": 0.8
+    }
+  ],
+  "willingnessToPayEvidence": [
+    {
+      "source": "Competitor Pricing Pages",
+      "metric": "$99-$299/month for SMB plans",
+      "date": "2026-07-30",
+      "confidence": 0.95
+    },
+    {
+      "source": "Agency Service Pricing",
+      "metric": "$5K-$15K for manual compliance work",
+      "date": "2026-07-30",
+      "confidence": 0.9
+    }
+  ],
+  "competitionGapEvidence": [
+    {
+      "source": "User Reviews",
+      "metric": "Complex UI complaints",
+      "date": "2026-07-30",
+      "confidence": 0.85
+    },
+    {
+      "source": "Community Discussions",
+      "metric": "Underserved SMB segment needs simpler tools",
+      "date": "2026-07-30",
+      "confidence": 0.8
+    }
+  ],
+  "distributionEvidence": [
+    {
+      "source": "Meta Ad Library",
+      "metric": "50+ active compliance ads",
+      "date": "2026-07-30",
+      "confidence": 0.9
+    },
+    {
+      "source": "SEO Tools",
+      "metric": "Ranking for healthcare compliance keywords",
+      "date": "2026-07-30",
+      "confidence": 0.85
+    }
+  ],
+  "validationScore": {
+    "demand": 25,
+    "willingnessToPay": 14,
+    "competitionGap": 8,
+    "buildFeasibility": 15,
+    "distribution": 10,
+    "total": 72
+  },
+  "mvpScope": "Phase 1 MVP (8 weeks):\n1. Core compliance checklist builder with drag-and-drop interface\n2. Pre-built templates for common regulations (HIPAA, SOX, GDPR)\n3. Basic audit trail with timestamped actions\n4. Simple user management (up to 10 users)\n5. PDF report export functionality\n\nPhase 2 (4 weeks):\n1. AI-powered regulatory update notifications\n2. Integration with Google Workspace and Microsoft 365\n3. Advanced reporting with custom branding\n4. Team collaboration features\n\nPhase 3 (4 weeks):\n1. Multi-client management for agencies\n2. White-label branding options\n3. API for custom integrations\n4. Advanced compliance analytics",
+  "monetization": "Pricing Tiers:\n- Starter: $29/month (1-2 users, basic templates)\n- Professional: $79/month (5 users, advanced features)\n- Enterprise: $199/month (unlimited users, compliance team features)\n- Agency: $499/month (white-label, multi-client)\n\nRevenue Model:\n- Monthly recurring subscription\n- Annual discounts (15% off)\n- Enterprise custom pricing\n- Agency partner program (20% commission)\n\nTarget MRR goals:\n- Month 1: $1,000\n- Month 3: $5,000\n- Month 6: $15,000\n- Year 1: $100,000",
+  "acquisitionStrategy": "Acquisition Channels:\n1. LinkedIn ads targeting 'healthcare compliance officers'\n2. Content marketing (blog posts on compliance topics)\n3. Healthcare IT conference sponsorships\n4. Partnerships with accounting/law firms\n5. Referral program for existing customers\n\nFirst 100 customers:\n- Focus on healthcare practices (HIPAA compliance)\n- Leverage founder's network in healthcare IT\n- Use testimonials from beta users\n- Offer 30-day free trial\n\nCustomer acquisition cost target: <$200\nLifetime value target: >$1,500",
+  "competitionAnalysis": "Market Analysis:\n- 200+ compliance tools in G2/Capterra\n- $2.3B total market size\n- Key competitors: ComplyRight ($99+/mo), AuditFlow ($149+/mo)\n\nCompetitive Advantages:\n1. Simpler, more intuitive UI\n2. AI-powered regulatory updates\n3. Lower price point ($29 vs $99+)\n4. Better onboarding experience\n\nDifferentiation Strategy:\n- Focus on SMBs (competitors target enterprises)\n- AI assistance for regulatory monitoring\n- Template library for common regulations",
+  "wedgeOpportunity": "Wedge Opportunity:\n1. AI-Powered Regulatory Monitoring - Automatically track regulation changes\n2. Simpler UI for Non-Technical Users - Drag-and-drop checklist builder\n3. Template Library for Common Regulations - Pre-built templates save time\n4. One-Click Audit Reports - Generate compliance reports instantly\n5. SMB-Focused Pricing - $29 vs $99+ for competitors",
+  "unknowns": [
+    "Exact pricing sensitivity in healthcare vertical",
+    "Regulatory approval requirements for SaaS tools",
+    "Integration complexity with EHR systems",
+    "Customer support volume expectations"
+  ],
+  "nextValidationSteps": [
+    "Build prototype of checklist builder with 3 regulation templates",
+    "Interview 10 healthcare practices about compliance pain points",
+    "Build MVP integration with one EHR system",
+    "Test pricing with 20 potential early adopters",
+    "Conduct pricing survey with 100 potential customers",
+    "Validate integration requirements with 3 EHR vendors"
+  ],
+  "status": "Validated",
+  "createdAt": "2026-07-30T08:52:59Z",
+  "updatedAt": "2026-07-30T08:52:59Z"
+}

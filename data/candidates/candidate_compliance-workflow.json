@@ -1,0 +1,40 @@
+{
+  "id": "candidate_compliance-workflow",
+  "nicheLabel": "Candidate Compliance-Workflow",
+  "problemSummary": "Problem identified from evidence for candidate_compliance-workflow",
+  "comparableProducts": [
+    "Evidence from ComplyRight Pricing Page"
+  ],
+  "tractionEvidenceRefs": [
+    "ev_norm_traction_4376406144"
+  ],
+  "pricingEvidenceRefs": [
+    "ev_norm_pricing_4374995008"
+  ],
+  "acquisitionEvidenceRefs": [
+    "ev_norm_acquisition_4376598464"
+  ],
+  "complexityNotes": "Can leverage existing AI tools and APIs for MVP",
+  "wedgeHypotheses": [
+    {
+      "description": "Gap identified: Evidence from Reddit Complaints",
+      "evidenceRefs": [
+        "ev_norm_wedge_4376491584"
+      ]
+    }
+  ],
+  "acquisitionNotes": "SEO, content marketing, and community outreach viable",
+  "maintainabilityNotes": "Low operational burden, API-based architecture",
+  "samuelStyleScore": 72,
+  "scoreBreakdown": {
+    "demand": 25,
+    "willingnessToPay": 14,
+    "competitionGap": 8,
+    "buildFeasibility": 15,
+    "distribution": 10
+  },
+  "promotionStatus": "promote",
+  "promotionRationale": "Good candidate meeting minimum threshold",
+  "createdOn": "2026-07-30T07:27:34Z",
+  "lastUpdated": "2026-07-30T07:27:34Z"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0012",
+  "entityType": "candidate",
+  "entityId": "candidate_client-reporting",
+  "sourceClass": "traffic-acquisition",
+  "supports": [
+    "distribution",
+    "demand"
+  ],
+  "title": "Evidence from Content Marketing Evidence",
+  "url": "https://example.com/client-reporting/acquisition",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Content Marketing Evidence",
+  "rawEvidenceId": "raw_ev_0012"
+}

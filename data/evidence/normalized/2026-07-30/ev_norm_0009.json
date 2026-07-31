@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0009",
+  "entityType": "candidate",
+  "entityId": "candidate_compliance-workflow",
+  "sourceClass": "community-discussions",
+  "supports": [
+    "wedge-opportunity",
+    "demand-language"
+  ],
+  "title": "Evidence from Community Complaints",
+  "url": "https://example.com/compliance-workflow/wedge",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Community Complaints",
+  "rawEvidenceId": "raw_ev_0009"
+}

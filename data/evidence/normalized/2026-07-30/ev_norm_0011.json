@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0011",
+  "entityType": "candidate",
+  "entityId": "candidate_client-reporting",
+  "sourceClass": "public-founder-proof",
+  "supports": [
+    "traction",
+    "demand"
+  ],
+  "title": "Evidence from Agency MRR Proof",
+  "url": "https://example.com/client-reporting/traction",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Agency MRR Proof",
+  "rawEvidenceId": "raw_ev_0011"
+}

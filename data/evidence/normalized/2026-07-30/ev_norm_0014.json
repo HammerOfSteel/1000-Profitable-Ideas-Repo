@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0014",
+  "entityType": "candidate",
+  "entityId": "candidate_client-reporting",
+  "sourceClass": "job-posting-signals",
+  "supports": [
+    "demand",
+    "market-activity"
+  ],
+  "title": "Evidence from Agency Job Postings",
+  "url": "https://example.com/client-reporting/market",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Agency Job Postings",
+  "rawEvidenceId": "raw_ev_0014"
+}

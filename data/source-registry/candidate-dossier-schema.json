@@ -1,0 +1,157 @@
+{
+  "id": "candidate-dossier-schema",
+  "name": "Candidate Dossier Schema",
+  "description": "Schema for storing candidate idea dossiers with all evidence and analysis",
+  "fields": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier for this candidate (e.g., candidate_video-automation_01)"
+    },
+    "nicheLabel": {
+      "type": "string",
+      "required": true,
+      "description": "Label for the niche this candidate addresses"
+    },
+    "problemSummary": {
+      "type": "string",
+      "required": true,
+      "description": "Summary of the problem this candidate addresses"
+    },
+    "comparableProducts": {
+      "type": "array",
+      "required": true,
+      "items": "string",
+      "description": "List of comparable products in the market"
+    },
+    "tractionEvidenceRefs": {
+      "type": "array",
+      "required": false,
+      "items": "string",
+      "description": "References to normalized evidence records showing traction"
+    },
+    "pricingEvidenceRefs": {
+      "type": "array",
+      "required": false,
+      "items": "string",
+      "description": "References to normalized evidence records showing pricing/willingness-to-pay"
+    },
+    "acquisitionEvidenceRefs": {
+      "type": "array",
+      "required": false,
+      "items": "string",
+      "description": "References to normalized evidence records showing acquisition channels"
+    },
+    "complexityNotes": {
+      "type": "string",
+      "required": false,
+      "description": "Notes about build complexity and maintenance burden"
+    },
+    "wedgeHypotheses": {
+      "type": "array",
+      "required": false,
+      "items": "object",
+      "description": "List of wedge/improvement hypotheses",
+      "fields": {
+        "description": "string",
+        "evidenceRefs": "array of strings"
+      }
+    },
+    "acquisitionNotes": {
+      "type": "string",
+      "required": false,
+      "description": "Summary of acquisition/cloneable distribution path"
+    },
+    "maintainabilityNotes": {
+      "type": "string",
+      "required": false,
+      "description": "Notes about maintainability and operational burden"
+    },
+    "samuelStyleScore": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "required": true,
+      "description": "First-pass Samuel-style score"
+    },
+    "scoreBreakdown": {
+      "type": "object",
+      "required": false,
+      "description": "Detailed breakdown of the score",
+      "fields": {
+        "demand": "number",
+        "willingnessToPay": "number",
+        "competitionGap": "number",
+        "buildFeasibility": "number",
+        "distribution": "number"
+      }
+    },
+    "promotionStatus": {
+      "type": "string",
+      "required": true,
+      "enum": ["promote", "reject", "watchlist"],
+      "description": "Recommendation status for this candidate"
+    },
+    "promotionRationale": {
+      "type": "string",
+      "required": false,
+      "description": "Explanation of why this candidate was promoted/rejected"
+    },
+    "createdOn": {
+      "type": "string",
+      "format": "date-time",
+      "required": true,
+      "description": "When this dossier was created"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "required": true,
+      "description": "When this dossier was last updated"
+    }
+  },
+  "storagePath": "data/candidates/<candidate-id>.json",
+  "example": {
+    "id": "candidate_video-automation_01",
+    "nicheLabel": "Video content automation",
+    "problemSummary": "Content creators spend too much time manually editing videos for multiple platforms",
+    "comparableProducts": [
+      "Descript",
+      "CapCut",
+      "Runway ML",
+      "Pictory"
+    ],
+    "tractionEvidenceRefs": [
+      "ev_norm_001",
+      "ev_norm_002"
+    ],
+    "pricingEvidenceRefs": [
+      "ev_norm_003",
+      "ev_norm_004"
+    ],
+    "acquisitionEvidenceRefs": [
+      "ev_norm_005"
+    ],
+    "complexityNotes": "Can leverage existing AI video APIs, core value is workflow automation",
+    "wedgeHypotheses": [
+      {
+        "description": "Auto-adapt content for platform-specific formats",
+        "evidenceRefs": ["ev_norm_006"]
+      }
+    ],
+    "acquisitionNotes": "SEO for 'video editing automation', YouTube tutorials, Reddit communities",
+    "maintainabilityNotes": "Low operational burden, API-based, no complex infrastructure",
+    "samuelStyleScore": 82,
+    "scoreBreakdown": {
+      "demand": 22,
+      "willingnessToPay": 20,
+      "competitionGap": 16,
+      "buildFeasibility": 18,
+      "distribution": 8
+    },
+    "promotionStatus": "promote",
+    "promotionRationale": "Strong traction evidence from similar tools, clear wedge in platform optimization, low build complexity with AI APIs",
+    "createdOn": "2026-07-30T10:00:00Z",
+    "lastUpdated": "2026-07-30T10:00:00Z"
+  }
+}

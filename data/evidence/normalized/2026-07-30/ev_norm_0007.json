@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0007",
+  "entityType": "candidate",
+  "entityId": "candidate_compliance-workflow",
+  "sourceClass": "ad-library-evidence",
+  "supports": [
+    "distribution",
+    "replicability"
+  ],
+  "title": "Evidence from LinkedIn Ads Evidence",
+  "url": "https://example.com/compliance-workflow/acquisition",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from LinkedIn Ads Evidence",
+  "rawEvidenceId": "raw_ev_0007"
+}

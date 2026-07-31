@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0006",
+  "entityType": "candidate",
+  "entityId": "candidate_compliance-workflow",
+  "sourceClass": "public-founder-proof",
+  "supports": [
+    "traction",
+    "demand"
+  ],
+  "title": "Evidence from Compliance SaaS Growth",
+  "url": "https://example.com/compliance-workflow/traction",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Compliance SaaS Growth",
+  "rawEvidenceId": "raw_ev_0006"
+}

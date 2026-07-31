@@ -1,0 +1,111 @@
+{
+  "id": "normalized-evidence-schema",
+  "name": "Normalized Evidence Record Schema",
+  "description": "Schema for storing normalized evidence records after processing raw data",
+  "fields": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier for this normalized evidence record (e.g., ev_norm_001)"
+    },
+    "entityType": {
+      "type": "string",
+      "required": true,
+      "description": "Type of entity this evidence belongs to (candidate, idea, etc.)"
+    },
+    "entityId": {
+      "type": "string",
+      "required": true,
+      "description": "ID of the entity this evidence belongs to"
+    },
+    "sourceClass": {
+      "type": "string",
+      "required": true,
+      "description": "Class of the source (public-founder-proof, competitor-pricing, etc.)"
+    },
+    "supports": {
+      "type": "array",
+      "required": true,
+      "items": "string",
+      "description": "List of decision dimensions this evidence supports (traction, willingness-to-pay, etc.)"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "description": "Human-readable title for this evidence"
+    },
+    "url": {
+      "type": "string",
+      "required": false,
+      "description": "URL of the source (if applicable)"
+    },
+    "accessedOn": {
+      "type": "string",
+      "format": "date",
+      "required": true,
+      "description": "Date when this evidence was accessed"
+    },
+    "claim": {
+      "type": "string",
+      "required": true,
+      "description": "The claim this evidence supports"
+    },
+    "metric": {
+      "type": "string",
+      "required": false,
+      "description": "Human-readable metric description"
+    },
+    "metricValue": {
+      "type": "number",
+      "required": false,
+      "description": "Numeric value of the metric"
+    },
+    "metricUnit": {
+      "type": "string",
+      "required": false,
+      "description": "Unit of the metric (usd_mrr, usd_per_month, count, percentage)"
+    },
+    "extractionConfidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "required": true,
+      "description": "Confidence level of the extraction (0-1)"
+    },
+    "assumption": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Whether this evidence is based on an assumption"
+    },
+    "notes": {
+      "type": "string",
+      "required": false,
+      "description": "Notes about what this evidence means"
+    },
+    "rawEvidenceId": {
+      "type": "string",
+      "required": false,
+      "description": "Reference to the raw evidence this was derived from"
+    }
+  },
+  "storagePath": "data/evidence/normalized/YYYY-MM-DD/<id>.json",
+  "example": {
+    "id": "ev_norm_001",
+    "entityType": "candidate",
+    "entityId": "candidate_video-automation_01",
+    "sourceClass": "public-founder-proof",
+    "supports": ["traction", "willingness-to-pay"],
+    "title": "Founder revenue proof",
+    "url": "https://example.com/post",
+    "accessedOn": "2026-07-29",
+    "claim": "This product category shows public proof of monetization",
+    "metric": "$12K MRR screenshot",
+    "metricValue": 12000,
+    "metricUnit": "usd_mrr",
+    "extractionConfidence": 0.93,
+    "assumption": false,
+    "notes": "useful for first-pass Samuel-style traction validation",
+    "rawEvidenceId": "raw_ev_001"
+  }
+}

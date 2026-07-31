@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# build output
+.next/
+out/
+build/
+dist/
+
+# python
+__pycache__/
+*.pyc
+
+# misc
+.DS_Store
+*.pem
+
+# env files
+.env*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo

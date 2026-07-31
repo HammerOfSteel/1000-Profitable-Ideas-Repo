@@ -1,0 +1,19 @@
+{
+  "id": "ev_norm_0003",
+  "entityType": "candidate",
+  "entityId": "candidate_ai-video-editor",
+  "sourceClass": "seo-footprint-analysis",
+  "supports": [
+    "distribution",
+    "demand",
+    "replicability"
+  ],
+  "title": "Evidence from SEO Traffic Analysis",
+  "url": "https://example.com/ai-video-editor/acquisition",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from SEO Traffic Analysis",
+  "rawEvidenceId": "raw_ev_0003"
+}

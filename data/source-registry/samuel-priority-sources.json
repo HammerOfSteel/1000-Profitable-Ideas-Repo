@@ -1,0 +1,387 @@
+[
+  {
+    "id": "public-founder-proof",
+    "name": "Public founder proof",
+    "sourceClass": "public-founder-proof",
+    "priority": 1,
+    "enabled": true,
+    "purpose": "Detect live proof that a product category or product instance is making money or has meaningful traction.",
+    "collectionMethod": "Manual URL curation first, then collector-backed fetch from approved posts, interviews, or build-in-public artifacts.",
+    "freshness": "Review every 30 days",
+    "dataFields": [
+      "founderHandle",
+      "productName",
+      "proofType",
+      "metricValue",
+      "metricUnit",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "traction",
+      "willingness-to-pay",
+      "winner-selection"
+    ],
+    "supportedClaims": [
+      "product-has-traction",
+      "revenue-evidence",
+      "user-growth",
+      "market-validation"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 10,
+      "requireHumanReview": true,
+      "allowedDomains": [
+        "twitter.com",
+        "linkedin.com",
+        "substack.com",
+        "producthunt.com"
+      ]
+    }
+  },
+  {
+    "id": "competitor-pricing-pages",
+    "name": "Competitor pricing pages",
+    "sourceClass": "competitor-pricing",
+    "priority": 2,
+    "enabled": true,
+    "purpose": "Anchor willingness to pay, packaging reality, and common plan shapes for proven products.",
+    "collectionMethod": "Fetch direct pricing URLs and extract plan tiers, starting price, enterprise upsells, and packaging notes.",
+    "freshness": "Review every 45 days",
+    "dataFields": [
+      "productName",
+      "startingPrice",
+      "currency",
+      "billingUnit",
+      "planCount",
+      "enterpriseUpsell",
+      "packagingNotes"
+    ],
+    "decisionDimensions": [
+      "willingness-to-pay",
+      "packaging",
+      "market-shape"
+    ],
+    "supportedClaims": [
+      "willingness-to-pay-evidence",
+      "pricing-anchors",
+      "packaging-models",
+      "market-structure"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 20,
+      "requireHumanReview": false,
+      "rateLimit": "5 requests per minute"
+    }
+  },
+  {
+    "id": "traffic-and-acquisition-signals",
+    "name": "Traffic and acquisition signals",
+    "sourceClass": "traffic-acquisition",
+    "priority": 3,
+    "enabled": true,
+    "purpose": "Understand whether the growth path appears replicable rather than purely opaque or dependent on a huge brand moat.",
+    "collectionMethod": "Capture visible SEO footprints, ad-library evidence, content-channel presence, and partner/referral signals from approved sources.",
+    "freshness": "Review every 30 days",
+    "dataFields": [
+      "channelType",
+      "evidenceCount",
+      "notes",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "distribution",
+      "replicability",
+      "go-to-market"
+    ],
+    "supportedClaims": [
+      "acquisition-replicability",
+      "seo-evidence",
+      "content-marketing",
+      "paid-acquisition",
+      "referral-channels"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 15,
+      "requireHumanReview": true
+    }
+  },
+  {
+    "id": "review-and-complaint-sources",
+    "name": "Review and complaint sources",
+    "sourceClass": "review-complaints",
+    "priority": 4,
+    "enabled": true,
+    "purpose": "Identify wedge opportunities, persistent user frustration, and patterns worth improving by a narrow product.",
+    "collectionMethod": "Fetch review pages, public complaints, and discussion threads with explicit pain points.",
+    "freshness": "Review every 30 days",
+    "dataFields": [
+      "productName",
+      "painPoint",
+      "frequencyHint",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "wedge-opportunity",
+      "product-shape",
+      "positioning"
+    ],
+    "supportedClaims": [
+      "user-pain-points",
+      "product-gaps",
+      "wedge-opportunities",
+      "competitive-weaknesses"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 25,
+      "requireHumanReview": false
+    }
+  },
+  {
+    "id": "marketplace-and-ecosystem-counts",
+    "name": "Marketplace and ecosystem counts",
+    "sourceClass": "marketplace-ecosystem",
+    "priority": 5,
+    "enabled": true,
+    "purpose": "Verify that a niche is commercially alive by observing active listings, vendor density, or ecosystem surface area.",
+    "collectionMethod": "Capture counts from marketplaces, app stores, and ecosystem directories with stable URLs.",
+    "freshness": "Review every 60 days",
+    "dataFields": [
+      "marketplaceName",
+      "listingCount",
+      "categoryName",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "market-activity",
+      "competition-shape",
+      "ecosystem-fit"
+    ],
+    "supportedClaims": [
+      "market-activity",
+      "competition-density",
+      "ecosystem-health"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 30,
+      "requireHumanReview": false
+    }
+  },
+  {
+    "id": "community-discussion-sources",
+    "name": "Community discussion sources",
+    "sourceClass": "community-discussions",
+    "priority": 6,
+    "enabled": true,
+    "purpose": "Surface recurring buyer behavior, repeated pains, and underserved segments from places where operators talk candidly.",
+    "collectionMethod": "Start from curated forum, Slack, Reddit, or niche-community URLs and extract recurring demand language.",
+    "freshness": "Review every 21 days",
+    "dataFields": [
+      "communityName",
+      "topic",
+      "painPoint",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "demand-language",
+      "segment-fit",
+      "problem-recurrence"
+    ],
+    "supportedClaims": [
+      "recurring-pain",
+      "demand-language",
+      "underserved-segments",
+      "problem-frequency"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 30,
+      "requireHumanReview": true
+    }
+  },
+  {
+    "id": "ad-library-evidence",
+    "name": "Ad library and paid presence",
+    "sourceClass": "traffic-acquisition",
+    "priority": 7,
+    "enabled": true,
+    "purpose": "Verify organic growth vs paid acquisition dependency; identify replicable marketing channels.",
+    "collectionMethod": "Query platform ad libraries (Meta, Google, LinkedIn) for active ads from competitors.",
+    "freshness": "Review every 14 days",
+    "dataFields": [
+      "platform",
+      "adCount",
+      "creativeType",
+      "targetingEvidence",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "distribution",
+      "replicability",
+      "go-to-market"
+    ],
+    "supportedClaims": [
+      "paid-acquisition-evidence",
+      "marketing-channel-validation",
+      "growth-strategy"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 10,
+      "requireHumanReview": true,
+      "apiAccessRequired": true
+    }
+  },
+  {
+    "id": "public-traffic-estimators",
+    "name": "Public traffic estimators",
+    "sourceClass": "traffic-acquisition",
+    "priority": 8,
+    "enabled": true,
+    "purpose": "Estimate market size and validate traffic potential for idea candidates.",
+    "collectionMethod": "Query tools like SimilarWeb, Ahrefs, SEMrush for traffic estimates of competitor domains.",
+    "freshness": "Review every 30 days",
+    "dataFields": [
+      "domain",
+      "monthlyVisits",
+      "trafficSourceBreakdown",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "demand",
+      "distribution",
+      "market-size"
+    ],
+    "supportedClaims": [
+      "traffic-evidence",
+      "market-size-approximation",
+      "demand-validation"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 20,
+      "requireHumanReview": false,
+      "apiAccessRequired": true
+    }
+  },
+  {
+    "id": "job-posting-signals",
+    "name": "Job posting signals",
+    "sourceClass": "marketplace-ecosystem",
+    "priority": 9,
+    "enabled": true,
+    "purpose": "Identify internal demand for solutions and validate market need through enterprise hiring patterns.",
+    "collectionMethod": "Scrape job boards (LinkedIn, Indeed, AngelList) for roles indicating need for specific solutions.",
+    "freshness": "Review every 21 days",
+    "dataFields": [
+      "roleTitle",
+      "companyName",
+      "frequencyCount",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "demand",
+      "market-activity",
+      "competition-shape"
+    ],
+    "supportedClaims": [
+      "internal-demand-evidence",
+      "market-need",
+      "enterprise-adoption"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 25,
+      "requireHumanReview": false
+    }
+  },
+  {
+    "id": "agency-pricing-evidence",
+    "name": "Agency and consultant pricing",
+    "sourceClass": "public-founder-proof",
+    "priority": 10,
+    "enabled": true,
+    "purpose": "Anchor willingness to pay through service-based alternatives to software solutions.",
+    "collectionMethod": "Fetch agency websites, consulting directories, and service marketplaces for pricing information.",
+    "freshness": "Review every 60 days",
+    "dataFields": [
+      "agencyName",
+      "serviceType",
+      "pricingModel",
+      "priceRange",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "willingness-to-pay",
+      "market-shape",
+      "competition-gap"
+    ],
+    "supportedClaims": [
+      "service-alternative-pricing",
+      "labor-cost-justification",
+      "market-willingness-to-pay"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 15,
+      "requireHumanReview": true
+    }
+  },
+  {
+    "id": "regulatory-sources",
+    "name": "Regulatory and government sources",
+    "sourceClass": "marketplace-ecosystem",
+    "priority": 11,
+    "enabled": true,
+    "purpose": "Identify compliance-driven opportunities and validate market viability through regulatory frameworks.",
+    "collectionMethod": "Query government databases, regulatory filings, and compliance requirement documents.",
+    "freshness": "Review every 90 days",
+    "dataFields": [
+      "jurisdiction",
+      "regulationType",
+      "complianceRequirement",
+      "marketImpact",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "market-activity",
+      "complexity",
+      "wedge-opportunity"
+    ],
+    "supportedClaims": [
+      "compliance-opportunity",
+      "regulatory-driven-demand",
+      "market-entry-barriers"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 5,
+      "requireHumanReview": true
+    }
+  },
+  {
+    "id": "seo-footprint-analysis",
+    "name": "SEO footprint analysis",
+    "sourceClass": "traffic-acquisition",
+    "priority": 12,
+    "enabled": true,
+    "purpose": "Analyze organic search presence as evidence of replicable acquisition strategy.",
+    "collectionMethod": "Use SEO tools to analyze search visibility, keyword rankings, and backlink profiles.",
+    "freshness": "Review every 30 days",
+    "dataFields": [
+      "domain",
+      "organicTrafficEstimate",
+      "topKeywords",
+      "backlinkCount",
+      "capturedAt"
+    ],
+    "decisionDimensions": [
+      "distribution",
+      "replicability",
+      "go-to-market"
+    ],
+    "supportedClaims": [
+      "seo-evidence",
+      "organic-growth-potential",
+      "content-marketing-opportunity"
+    ],
+    "collectionConstraints": {
+      "maxSourcesPerDay": 15,
+      "requireHumanReview": false,
+      "apiAccessRequired": true
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "id": "ev_norm_0010",
+  "entityType": "candidate",
+  "entityId": "candidate_client-reporting",
+  "sourceClass": "competitor-pricing",
+  "supports": [
+    "willingness-to-pay"
+  ],
+  "title": "Evidence from Reporting Tool Pricing",
+  "url": "https://example.com/client-reporting/pricing",
+  "accessedOn": "2026-07-30",
+  "claim": "This product offers a paid plan at a meaningful price point",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Reporting Tool Pricing",
+  "rawEvidenceId": "raw_ev_0010"
+}

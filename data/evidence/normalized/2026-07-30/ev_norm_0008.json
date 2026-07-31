@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0008",
+  "entityType": "candidate",
+  "entityId": "candidate_compliance-workflow",
+  "sourceClass": "marketplace-ecosystem",
+  "supports": [
+    "market-activity",
+    "competition-shape"
+  ],
+  "title": "Evidence from G2 Listings",
+  "url": "https://example.com/compliance-workflow/market",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from G2 Listings",
+  "rawEvidenceId": "raw_ev_0008"
+}

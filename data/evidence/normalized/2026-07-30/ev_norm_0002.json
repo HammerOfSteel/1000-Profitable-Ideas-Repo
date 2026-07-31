@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0002",
+  "entityType": "candidate",
+  "entityId": "candidate_ai-video-editor",
+  "sourceClass": "public-founder-proof",
+  "supports": [
+    "traction",
+    "demand"
+  ],
+  "title": "Evidence from Descript MRR Proof",
+  "url": "https://example.com/ai-video-editor/traction",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Descript MRR Proof",
+  "rawEvidenceId": "raw_ev_0002"
+}

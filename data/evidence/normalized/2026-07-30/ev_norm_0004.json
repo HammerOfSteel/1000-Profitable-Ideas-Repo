@@ -1,0 +1,18 @@
+{
+  "id": "ev_norm_0004",
+  "entityType": "candidate",
+  "entityId": "candidate_ai-video-editor",
+  "sourceClass": "review-complaints",
+  "supports": [
+    "wedge-opportunity",
+    "product-shape"
+  ],
+  "title": "Evidence from Reddit Complaints",
+  "url": "https://example.com/ai-video-editor/wedge",
+  "accessedOn": "2026-07-30",
+  "claim": "",
+  "extractionConfidence": 0.5,
+  "assumption": false,
+  "notes": "Normalized from Reddit Complaints",
+  "rawEvidenceId": "raw_ev_0004"
+}
